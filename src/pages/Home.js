@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import {Layout, Menu} from 'antd';
 import {BrowserRouter as Router, Switch, Route, Link, useParams} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import {DesktopOutlined, PieChartOutlined, FileOutlined, TeamOutlined, UserOutlined} from '@ant-design/icons';
-import { createBrowserHistory } from "history";
+import {createBrowserHistory} from "history";
 import {LinkContainer} from 'react-router-bootstrap';
 const {Header, Content, Footer, Sider} = Layout;
 const {SubMenu} = Menu;
-
 
 const history = createBrowserHistory();
 function Home() {
@@ -56,7 +56,7 @@ class SiderDemo extends React.Component {
                         <div className="logo"/>
                         <Menu theme="light" defaultSelectedKeys={['1']} mode="inline">
                             <Menu.Item key="1" icon={< PieChartOutlined />}>
-                                <Link to="/react-markup-blog">Home</Link>
+                                <Link to="/">Home</Link>
                             </Menu.Item>
                             <Menu.Item key="2" icon={< DesktopOutlined />}>
                                 <Link to="/css">CSS</Link>
@@ -79,13 +79,13 @@ class SiderDemo extends React.Component {
                             style={{
                             margin: '0 16px'
                         }}>
-
-                            <Switch>
-                                <Route path="/react-markup-blog" exact children={< Home />}/>
-                                <Route path="/css" children={< CSS />}/>
-                                <Route path="/morecss" children={< MoreCSS />}/>
-                            </Switch>
-
+                            <HashRouter>
+                                <Switch>
+                                    <Route exact path="/"  children={< Home />}/>
+                                    <Route path="/css" children={< CSS />}/>
+                                    <Route path="/morecss" children={< MoreCSS />}/>
+                                </Switch>
+                            </HashRouter>
                         </Content>
                         <Footer
                             style={{
