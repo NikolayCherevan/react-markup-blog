@@ -48,7 +48,10 @@ class SiderDemo extends React.Component {
     render() {
         const {collapsed} = this.state;
         return (
-            <Router history={history}>
+<HashRouter
+   basename="/react-markup-blog"
+>
+            <Router>
                 <Layout style={{
                     minHeight: '100vh'
                 }}>
@@ -56,7 +59,7 @@ class SiderDemo extends React.Component {
                         <div className="logo"/>
                         <Menu theme="light" defaultSelectedKeys={['1']} mode="inline">
                             <Menu.Item key="1" icon={< PieChartOutlined />}>
-                                <Link to="/">Home</Link>
+                                <Link to="/react-markup-blog">Home</Link>
                             </Menu.Item>
                             <Menu.Item key="2" icon={< DesktopOutlined />}>
                                 <Link to="/css">CSS</Link>
@@ -79,13 +82,11 @@ class SiderDemo extends React.Component {
                             style={{
                             margin: '0 16px'
                         }}>
-                            <HashRouter>
                                 <Switch>
                                     <Route exact path="/"  children={< Home />}/>
                                     <Route path="/css" children={< CSS />}/>
                                     <Route path="/morecss" children={< MoreCSS />}/>
                                 </Switch>
-                            </HashRouter>
                         </Content>
                         <Footer
                             style={{
@@ -95,6 +96,7 @@ class SiderDemo extends React.Component {
                     </Layout>
                 </Layout>
             </Router>
+</HashRouter>
         );
     }
 }
