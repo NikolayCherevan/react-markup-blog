@@ -3,19 +3,11 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import {Layout, Menu} from 'antd';
 import {BrowserRouter as Router, Switch, Route, Link, useParams} from "react-router-dom";
-import { HashRouter } from 'react-router-dom'
 import {DesktopOutlined, PieChartOutlined, FileOutlined, TeamOutlined, UserOutlined} from '@ant-design/icons';
 import {LinkContainer} from 'react-router-bootstrap';
 const {Header, Content, Footer, Sider} = Layout;
 const {SubMenu} = Menu;
-function NotFound() {
 
-    return (
-        <div>
-            NotFound
-        </div>
-    );
-}
 function Home() {
 
     return (
@@ -53,7 +45,7 @@ class SiderDemo extends React.Component {
     render() {
         const {collapsed} = this.state;
         return (
-            <Router >
+            <Router>
                 <Layout style={{
                     minHeight: '100vh'
                 }}>
@@ -64,11 +56,11 @@ class SiderDemo extends React.Component {
                                 <Link to="/react-markup-blog">Home</Link>
                             </Menu.Item>
                             <Menu.Item key="2" icon={< DesktopOutlined />}>
-                                <Link to="/css">CSS</Link>
+                                <Link to="/react-markup-blog/css">CSS</Link>
                             </Menu.Item>
 
                             <Menu.Item key="3" icon={< DesktopOutlined />}>
-                                <Link to="/morecss">More css</Link>
+                                <Link to="/react-markup-blog/morecss">More css</Link>
                             </Menu.Item>
 
                         </Menu>
@@ -86,10 +78,9 @@ class SiderDemo extends React.Component {
                         }}>
 
                             <Switch>
-                                <Route path="/react-markup-blog" component={< Home />}/>
-                                <Route path="/css" component={< CSS />}/>
-                                <Route path="/morecss" component={< MoreCSS />}/>
-                                <Route path="" component={<NotFound/>} />
+                                <Route path="/react-markup-blog" exact children={< Home />}/>
+                                <Route path="/react-markup-blog/css" children={< CSS />}/>
+                                <Route path="/react-markup-blog/morecss" children={< MoreCSS />}/>
                             </Switch>
 
                         </Content>
