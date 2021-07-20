@@ -1,7 +1,19 @@
-import Home from './pages/Home'
+import React, {useEffect} from 'react';
+import ReactDOM from 'react-dom';
+import Home from './pages/Home.jsx'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    HashRouter,
+    useLocation
+} from "react-router-dom";
 function App() {
     return (
-        <Home/>
+        <HashRouter>
+            <Home/>
+        </HashRouter>
     );
 }
 
