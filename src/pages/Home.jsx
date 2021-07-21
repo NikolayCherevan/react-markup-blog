@@ -200,11 +200,11 @@ function SiderDemo() {
                         <Route
                             path='/cssMain'
                             component={() => HeaderView() === '/cssMain'
-                            ? < IntroductionHTML />: ''}/>
+                            ? < IntroductionCSS />: ''}/>
                         <Route
                             path='/htmlMain'
                             component={() => HeaderView() === '/htmlMain'
-                            ? < IntroductionCSS />: ''}/>
+                            ? < IntroductionHTML />: ''}/>
 
                         <Route component={() =>< NotFoundPage />}/>
                     </Switch>
