@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/styles/_main.scss"],"names":[],"mappings":"AAAA,oDAEA,kBAAmB,CACf,WAAY","file":"main.6b34cae0.chunk.css","sourcesContent":[".ant-layout-sider-children {\r\n    .ant-btn.ant-btn-primary {\r\nwhite-space: normal;\r\n    height: auto;\r\n}\r\n}"]}
