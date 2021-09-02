@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 
-class IntroductionHTML extends Component {
+class JS1 extends Component {
     render() {
         return (
             <div>
-                <h1>Welcome to HTML world
-</h1>
+                <h1>JS basic. DOM</h1>
             </div>
         );
     }
 }
 
 
-
-export default IntroductionHTML;
+export default JS1;

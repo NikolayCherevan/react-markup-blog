@@ -1,14 +1,8 @@
-import React, {useEffect} from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import Home from './pages/Home.jsx'
 
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    HashRouter,
-    useLocation
+    HashRouter
 } from "react-router-dom";
 import './App.scss'
 function App() {

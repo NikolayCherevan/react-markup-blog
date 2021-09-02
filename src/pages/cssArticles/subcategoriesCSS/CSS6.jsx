@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 
-class IntroductionHTML extends Component {
+class CSS6 extends Component {
     render() {
         return (
             <div>
-                <h1>Welcome to HTML world
-</h1>
+              <h1>Flex. Верстка layout по макету. Flex-froggy</h1>
             </div>
         );
     }
 }
 
 
-
-export default IntroductionHTML;
+export default CSS6;

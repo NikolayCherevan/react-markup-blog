@@ -4,7 +4,7 @@ class IntroductionCSS extends Component {
     render() {
         return (
             <div>
-                welcome to css word
+                <h1>Welcome to css word</h1>
             </div>
         );
     }

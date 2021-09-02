@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class IntroductionHTML extends Component {
+class IntroductionAdvanced extends Component {
     render() {
         return (
             <div>
-                <h1>Welcome to HTML world
+                <h1>Welcome to Advanced world
 </h1>
             </div>
         );
@@ -13,4 +13,4 @@ class IntroductionHTML extends Component {
 
 
 
-export default IntroductionHTML;
+export default IntroductionAdvanced;

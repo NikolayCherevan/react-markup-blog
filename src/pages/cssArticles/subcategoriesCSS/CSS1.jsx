@@ -4,7 +4,7 @@ class CSS1 extends Component {
     render() {
         return (
             <div>
-              first aricle css  
+              <h1>CSS introduction. Инструменты разработчика в браузере </h1>
             </div>
         );
     }

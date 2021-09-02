@@ -27,19 +27,55 @@ h1 {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     margin-bottom: 0;
 }
+.social-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4px;
+    align-items: center;
+    justify-content: space-between;
+    h5 {
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    span {
+        margin-bottom: 10px;
+        @include media("min", "sm") {
+            margin-bottom: 0;
+          }
+    }
+}
+
 .ant-layout-footer {
     padding: 12px 10px;
-    .footer-container {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 4px;
-        align-items: center;
-        justify-content: space-between;
-        span {
-            margin-bottom: 10px;
-            @include media("min", "sm") {
-                margin-bottom: 0;
-              }
-        }
+    h5 {
+        color: black;
+        width: auto;
     }
+}
+.ant-layout-sider-children {
+    .ant-tag.ant-tag-has-color {
+        white-space: normal;
+        margin-bottom: 10px;
+    }
+}
+.not-selected {
+    background-color: transparent!important;
+    a {
+        color: rgba(255, 255, 255, 0.65)!important;
+    }
+}
+.logo {
+    background-image: url('./../images/logo.svg');
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    margin: 10px auto;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected,
+.ant-btn-primary,
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover,.ant-btn-primary:hover, .ant-btn-primary:focus {
+    background-color: $bg-main;
+    border-color: $bg-main;
 }

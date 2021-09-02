@@ -4,7 +4,7 @@ class CSS2 extends Component {
     render() {
         return (
             <div>
-              second aricle css  
+              <h1>Псевдоклассы, псевдоэлементы, комментарии</h1> 
             </div>
         );
     }

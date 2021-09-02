@@ -4,7 +4,7 @@ class HTML2 extends Component {
     render() {
         return (
             <div>
-              second aricle HTML  
+              <h1>HTML теги, типы тегов, layout веб страницы</h1>
             </div>
         );
     }
