@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import Home from './pages/Home.jsx'
+
 import {
     BrowserRouter as Router,
     Switch,

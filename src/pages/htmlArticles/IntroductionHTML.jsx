@@ -4,7 +4,9 @@ class IntroductionHTML extends Component {
     render() {
         return (
             <div>
-                welcome to html word
+                <h1>Этапы разработки web проекта. Верстальщик vs Frontend-developer. Рендеринг страниц. Инструменты разработки. Кроссбраузерность, валидность верстки. Браузеры. 
+базовая HTML - структура. Дерево документа
+</h1>
             </div>
         );
     }
