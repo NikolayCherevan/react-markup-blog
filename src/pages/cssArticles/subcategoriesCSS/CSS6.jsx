@@ -259,12 +259,12 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
                         <h2 className="text-center mt-5">
                             Попробуйте сами:
                         </h2>
+                        <small>Нажать на кнопку <kbd>Result</kbd> и смотреть как меняется состояние и поведение элементов при разных свойствах, используя радио кнопки  </small>
                         <iframe height="300" width="100%" scrolling="no" title="Flexbox playground" src="https://codepen.io/enxaneta/embed/adLPwv?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
                             See the Pen <a href="https://codepen.io/enxaneta/pen/adLPwv">
                                 Flexbox playground</a> by Gabi (<a href="https://codepen.io/enxaneta">@enxaneta</a>)
                             on <a href="https://codepen.io">CodePen</a>.
                         </iframe>
-                        <small>Нажать на кнопку <kbd>Result</kbd> и смотреть как меняется состояние и поведение элементов при разных свойствах, используя радио кнопки  </small>
                     </div>
 
                 </section>
@@ -273,14 +273,29 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
                         <h2 className="text-center mt-5">
                             Изучить flexbox свойства в игре
                         </h2>
-                        <div className="text-center">
-                            <img src={froggy} alt="" />
+                        <div className="m-auto">
+                            <img style={{display:'block', maxWidth: '100%'}} src={froggy} alt="" />
                         </div>
                         <p> Пройдите игру, чтобы запомнить поведение элементов во флексбокс контейнере при различных свойствах. 
                             Логика проста - лягушенок в игре - дочерний блок, его нужно переместить на листик, применяя flexbox свойства  
                              </p>
+                             <p className="text-center"> <a type="button" href="https://flexboxfroggy.com/#ru" class="btn btn-success">Cсылка на игру</a></p>
+                            
                     </div>
 
+                </section>
+                <section>
+                    <div className="container">
+                        <h2 className="text-center mt-5">
+                            Дополнительные ресурсы
+                        </h2>
+                      <a className="d-block mt-5" href="https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox"> Простыми словами о главном </a>
+                      <a className="d-block" href="https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox"> Подробно на MDN подробно о флексах </a>
+                      
+                <iframe className="mt-5" width="100%" height="315" src="https://www.youtube.com/embed/eVZEwEQg4pg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p className="text-center"> Подробный курс о свойствах, лучший блогер в IT сфере </p>
+                    </div>
+                    
                 </section>
             </div>
         );
