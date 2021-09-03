@@ -4,13 +4,18 @@ import {
     Link,
     useLocation,
 } from "react-router-dom";
-import {
-    RocketOutlined,
-} from '@ant-design/icons';
+import { createFromIconfontCN } from '@ant-design/icons';
+
+const IconFont = createFromIconfontCN({
+    scriptUrl: [
+      '//at.alicdn.com/t/font_1788044_0dwu4guekcwr.js', // icon-javascript, icon-java, icon-shoppingcart (overrided)
+    ],
+  });
 function HeaderView() {
     const location = useLocation();
     return location.pathname
 }
+
 let arrOfJSTheme = [
     {id:"22)", name: "JS basic. DOM"},
     {id:"23)", name: "JQuery, jquery libs, swiper(slick) и другие JS библиотеки"},
@@ -25,7 +30,7 @@ const menuJS = () => {
                          ? 'ant-menu-item-selected'
                          : ''}`}
                      key={item.id}
-                     icon={< RocketOutlined />}>
+                     icon={<IconFont type="icon-javascript" />}>
                      <Link to={`/jsMain/JS${index+1}`}>{item.id} {item.name}</Link>
                  </Menu.Item>)
                 })}
