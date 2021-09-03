@@ -28,7 +28,7 @@ class HTML1 extends Component {
               <section>
                 <div className="container">
                 <h2 className="mt-4 text-center">Жизненный цикл разработки IT-продукта</h2>
-                <div className="accordion w-75" id="accordionExample">
+                <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingOne">
                     <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
