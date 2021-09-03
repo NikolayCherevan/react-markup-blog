@@ -5,6 +5,10 @@ import flexWrap from './imagesCSS6/flex-wrap.svg';
 import justifyContent from './imagesCSS6/justify-content.svg';
 import alignItems from './imagesCSS6/align-items.svg';
 import alignContent from './imagesCSS6/align-content.svg';
+import orderImage from './imagesCSS6/order.svg';
+import flexGrow from './imagesCSS6/flex-grow.svg';
+import alignSelf from './imagesCSS6/align-self.svg';
+import froggy from './imagesCSS6/froggy.png';
 import {
     AlertOutlined,
 } from '@ant-design/icons';
@@ -155,6 +159,103 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
                 </section>
                 <section>
                     <div className="container">
+                        <h2 className="text-center mt-3">
+                            Fexbox свойства для <em> отдельных дочерних элементов </em>
+                        </h2>
+                        <p className="text-center mt-3 fw-bold text-decoration-underline">
+                            order
+                        </p>
+                        <div className="text-center">
+                            <img src={orderImage} alt="" />
+                        </div>
+
+                        <div className="code ">
+                            <SyntaxHighLighter language="css">
+                                {`.item { 
+order: 5; /* default is 0 */
+}`}
+                            </SyntaxHighLighter>
+                        </div>
+                        <p> По умолчанию дочерние элементы располагаются в исходном порядке. Однако <span className="font-monospace">order</span> свойство  может контролировать порядок, в котором они располагаются в контейнере. </p>
+                      
+                        <p className="text-center mt-3 fw-bold text-decoration-underline">
+                            flex-grow
+                        </p>
+                        <div className="text-center">
+                            <img src={flexGrow} alt="" />
+                        </div>
+
+                        <div className="code ">
+                            <SyntaxHighLighter language="css">
+                                {`.item { 
+flex-grow: 4; /* default 0 */
+}`}
+                            </SyntaxHighLighter>
+                        </div>
+                        <p> Чем больше значение свойства, тем больше свободной ширины контейнера заполняет дочерний элемент </p>
+                        <div class="alert alert-primary mt-4" role="alert">
+                              Читать подробнее о flex-grow <a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow" target="blank" class="alert-link">тут</a>.
+                            </div>
+                        <p className="text-center mt-3 fw-bold text-decoration-underline">
+                            flex-shrink
+                        </p>
+                        <div className="code ">
+                            <SyntaxHighLighter language="css">
+                                {`.item { 
+flex-shrink: 3; /* default 1 */
+}`}
+                            </SyntaxHighLighter>
+                        </div>
+                        <p> Указывает на способность элемента к сжатию при необходимости. при значении 0 , дочерний элемент сжиматься не будет </p>
+                        <div class="alert alert-primary mt-4" role="alert">
+                              Читать подробнее о flex-shrink <a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-shrink" target="blank" class="alert-link">тут</a>.
+                            </div>
+                        <p className="text-center mt-3 fw-bold text-decoration-underline">
+                            flex-basis
+                        </p>
+                        <div className="code ">
+                            <SyntaxHighLighter language="css">
+                                {`.item { 
+flex-basis:  | auto; /* default auto */
+}`}
+                            </SyntaxHighLighter>
+                        </div>
+                        <p> Свойство задаёт базовый размер флекс элемента по основной оси </p>
+                        <div class="alert alert-primary mt-4" role="alert">
+                              Читать подробнее о flex-basis <a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-basis" target="blank" class="alert-link">тут</a>.
+                            </div>
+                            <p className="text-center mt-3 fw-bold text-decoration-underline">
+                            flex
+                        </p>
+                        <div className="code ">
+                            <SyntaxHighLighter language="css">
+                                {`.item { 
+flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+}`}
+                            </SyntaxHighLighter>
+                        </div>
+                        <p> Свойство, которое содержит в себе flex-grow, flex-shrinkи в flex-basis </p>
+                        <p className="text-center mt-3 fw-bold text-decoration-underline">
+                            align-self
+                        </p>
+                        <div className="text-center">
+                            <img src={alignSelf} alt="" />
+                        </div>
+
+                        <div className="code ">
+                            <SyntaxHighLighter language="css">
+                                {`.item { 
+align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}`}
+                            </SyntaxHighLighter>
+                        </div>
+                        <p> Помогает выровнять отдельные дочерние элементы внутри родительского контейнера </p>
+                      
+                    </div>
+          
+                    </section>
+                <section>
+                    <div className="container">
                         <h2 className="text-center mt-5">
                             Попробуйте сами:
                         </h2>
@@ -169,11 +270,18 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
                 </section>
                 <section>
                     <div className="container">
-                        <h2 className="text-center mt-3">
-                            Fexbox свойства для <em> отдельных дочерних элементов </em>
+                        <h2 className="text-center mt-5">
+                            Изучить flexbox свойства в игре
                         </h2>
+                        <div className="text-center">
+                            <img src={froggy} alt="" />
+                        </div>
+                        <p> Пройдите игру, чтобы запомнить поведение элементов во флексбокс контейнере при различных свойствах. 
+                            Логика проста - лягушенок в игре - дочерний блок, его нужно переместить на листик, применяя flexbox свойства  
+                             </p>
                     </div>
-                    </section>
+
+                </section>
             </div>
         );
     }
