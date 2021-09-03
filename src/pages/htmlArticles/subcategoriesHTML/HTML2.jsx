@@ -10,6 +10,24 @@ class HTML2 extends Component {
         return (
             <div>
               <h1>HTML теги, типы тегов, layout веб страницы</h1>
+              <section className="mt-4">
+                <div className="container">
+                <nav aria-label="breadcrumb">
+                  <ol className="breadcrumb">
+                    <li className="breadcrumb-item"><a href="#">HTML</a></li>
+                    <li className="breadcrumb-item"><a href="#">HTML тег</a></li>
+                    <li className="breadcrumb-item"><a href="#">Блочные/строчные</a></li>
+                    <li className="breadcrumb-item"><a href="#">Базовые теги</a></li>
+                    <li className="breadcrumb-item"><a href="#">Таблицы</a></li>
+                    <li className="breadcrumb-item"><a href="#">Lorem Ipsum</a></li>
+                    <li className="breadcrumb-item"><a href="#">Ссылки</a></li>
+                    <li className="breadcrumb-item"><a href="#">Изображения</a></li>
+                    <li className="breadcrumb-item"><a href="#">HTML basic layouts</a></li>
+                    <li className="breadcrumb-item"><a href="#">Домашнее задание</a></li>
+                  </ol>
+                </nav>
+                </div>
+              </section>
               <section>
                   <div className="container">
                       <h2 className="mt-4 text-center">HTML. Что за зверь?</h2>
@@ -44,7 +62,7 @@ class HTML2 extends Component {
                           <li><code>Аттрибут</code> и его значение</li>
                           <li><code>Контент</code></li>
                       </ul>
-                      <iframe id="ytplayer" className="w-100" type="text/html" width="640" height="720"
+                      <iframe id="ytplayer" className="w-100" type="text/html" width="640" height="520"
                         src="https://www.youtube.com/embed/V1_2mV48lOk"
                         frameborder="0"/>
                   </div>
@@ -236,7 +254,7 @@ class HTML2 extends Component {
               <section>
                     <div className="container">
                     <h2 className="mt-4 text-center">Презентация</h2>
-                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSQOqy3nB1ujXlb26fo6DSJsYyZZ6TPoX22T9cW-skYRlC30qj0huARyIwGJaH-T65Q_yNF05JRaXTF/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSQOqy3nB1ujXlb26fo6DSJsYyZZ6TPoX22T9cW-skYRlC30qj0huARyIwGJaH-T65Q_yNF05JRaXTF/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="520" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                     </div>
               </section>
 
