@@ -22,6 +22,7 @@ class HTML1 extends Component {
                     <li className="breadcrumb-item"><a href="#">Браузеры</a></li>
                     <li className="breadcrumb-item"><a href="#">Базовая HTML - структура</a></li>
                     <li className="breadcrumb-item"><a href="#">Дерево документа</a></li>
+                    <li className="breadcrumb-item"><a href="#">Домашнее задание</a></li>
                   </ol>
                 </nav>
                 </div>
@@ -299,6 +300,26 @@ class HTML1 extends Component {
                       <div class="alert alert-primary mt-4" role="alert">
                               Читать подробнее о DOM: <a href="https://developer.mozilla.org/ru/docs/Web/API/Document_Object_Model/Introduction" target="blank" class="alert-link">тут</a>.
                             </div> 
+                    </div>
+              </section>
+
+              <section>
+                    <div className="container">
+                    <h2 className="mt-4 text-center">Презентация</h2>
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS7QMHn4TWPhAX1O8q1Uxmr0YtLNMTe-qDit7FsbkrqRris4Wtc5OaIw5vHnIJJakzT9kABYJ9ApGrd/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+              </section>
+
+              <section>
+                    <div className="container">
+                    <h2 className="mt-4 text-center">Домашнее задание</h2>
+                    <div class="bd-callout bd-callout-warning">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a class="btn btn-primary" href="#" role="button">1.</a> Выучить базовую структуру <strong>HTML</strong></li>
+                      <li class="list-group-item"><a class="btn btn-primary" href="#" role="button">2.</a> Установить <strong>VS Code</strong>, <a href="https://www.youtube.com/watch?v=2ntJ1ETtHi8">дополнительные плагины</a></li>
+                      <li class="list-group-item"><a class="btn btn-primary" href="#" role="button">3.</a> Читать дополнительную информацию (история мира WEB, о архитектуре “сервер-клиент”, передача данных, известные разработчики) </li>
+                    </ul>
+                    </div>
                     </div>
               </section>
               </div>
