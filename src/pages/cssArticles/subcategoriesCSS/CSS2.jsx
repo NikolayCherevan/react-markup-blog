@@ -101,7 +101,7 @@ class CSS2 extends Component {
                       <li className="list-group-item"><code>::first-line</code> - Соответствует первой строке содержимого порождающего элемента.</li>
                     </ul>
                     <iframe id="ytplayer" className="w-100 mt-4" type="text/html" width="640" height="520"
-                        src="https://www.youtube.com/embed/cbbER36qRIE"
+                        src="https://www.youtube.com/embed/gM_9k1eWiXA"
                         frameborder="0"/>
                     <h3 className="mt-4">Пример:</h3>
                     <iframe height="520" width="100%" scrolling="no" title="Pseudo-elements Example" src="https://codepen.io/CNDexter/embed/LBRWPZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
