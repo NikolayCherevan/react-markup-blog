@@ -3,6 +3,8 @@ import banner from './imagesCSS6/banner.jpg';
 import flexDirection from './imagesCSS6/flex-direction.svg';
 import flexWrap from './imagesCSS6/flex-wrap.svg';
 import justifyContent from './imagesCSS6/justify-content.svg';
+import alignItems from './imagesCSS6/align-items.svg';
+import alignContent from './imagesCSS6/align-content.svg';
 import {
     AlertOutlined,
 } from '@ant-design/icons';
@@ -26,7 +28,7 @@ class CSS6 extends Component {
                 <section>
                     <div className="container">
                         <h2 className="text-center mt-3">
-                            Fexbox свойства
+                            Fexbox свойства для <em> родительского элемента </em><small>(flexbox контейнера)</small> 
                         </h2>
                         <p className="text-center mt-3 fw-bold text-decoration-underline">
                             display
@@ -105,16 +107,73 @@ justify-content: flex-start | flex-end | center | space-between | space-around |
                         <ul class="list-group">
                             <li class="list-group-item"><span className="font-monospace">flex-start </span>(по умолчанию): элементы перемещаются к началу контейнера</li>
                             <li class="list-group-item"><span className="font-monospace">flex-end</span> : элементы перемещаются к концу контейнера</li>
-                            <li class="list-group-item"><span className="font-monospace">space-between</span>: дочерние элементы равномерно распределяются в строке; первый элемент находится в начале строки, последний элемент в конце строки</li>
-                            <li class="list-group-item"><span className="font-monospace">space-around</span>: элементы равномерно распределены в строке с равным пространством вокруг них</li>
-                            <li class="list-group-item"><span className="font-monospace">space-evenly</span>: элементы распределяются таким образом, чтобы расстояние между любыми двумя элементами (и расстояние до краев) было одинаковым</li>
+                            <li class="list-group-item"><span className="font-monospace">space-between</span> : дочерние элементы равномерно распределяются в строке; первый элемент находится в начале строки, последний элемент в конце строки</li>
+                            <li class="list-group-item"><span className="font-monospace">space-around</span> : элементы равномерно распределены в строке с равным пространством вокруг них</li>
+                            <li class="list-group-item"><span className="font-monospace">space-evenly</span> : элементы распределяются таким образом, чтобы расстояние между любыми двумя элементами (и расстояние до краев) было одинаковым</li>
                         </ul>
                         <hr />
                         <p className="mt-3"> <AlertOutlined /> Обратите внимание, что поддержка этих значений браузером имеет нюансы. Например, <span className="font-monospace">space-between </span> некоторые версии Edge никогда не поддерживали, а <span className="font-monospace">start/end/left/right </span> еще нет в Chrome. У MDN  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content">есть подробные графики</a>. Самые безопасные значения <span className="font-monospace">flex-start, flex-end и center</span>.</p>
                         <hr />
+                        <p className="text-center mt-3 fw-bold text-decoration-underline">
+                            align-items
+                        </p>
+                        <div className="text-center">
+                            <img src={alignItems} alt="" />
+                        </div>
+
+                        <div className="code ">
+                            <SyntaxHighLighter language="css">
+                                {`.container { 
+align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+}`}
+                            </SyntaxHighLighter>
+                        </div>
+                        <p> Свойство определяет поведение для расположения дочерних элементов вдоль поперечной оси в текущей строке. Думайте об этом свойстве, как о <span className="font-monospace">justify-content</span> версии для поперечной оси</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><span className="font-monospace">stretch </span>(по умолчанию): растянуть дочерние элементы, чтобы заполнить контейнер</li>
+                            <li class="list-group-item"><span className="font-monospace">flex-start</span> : элементы помещаются в начало поперечной оси</li>
+                            <li class="list-group-item"><span className="font-monospace">flex-end</span> : элементы помещаются в конец поперечной оси</li>
+                            <li class="list-group-item"><span className="font-monospace">center</span> : элементы центрируются по поперечной оси</li>
+                            <li class="list-group-item"><span className="font-monospace">baseline</span> : элементы выровнены во содержимому</li>
+                        </ul>
+                        <p className="text-center mt-3 fw-bold text-decoration-underline">
+                            align-content
+                        </p>
+                        <div className="text-center">
+                            <img src={alignContent} alt="" />
+                        </div>
+
+                        <div className="code ">
+                            <SyntaxHighLighter language="css">
+                                {`.container { 
+align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+}`}
+                            </SyntaxHighLighter>
+                        </div>
+                        <p> Свойство выравнивает дочерние элементы внутри контейнера, когда есть дополнительное пространство на поперечной оси, подобно тому, как при <span className="font-monospace">justify-content</span> выравниваются отдельные элементы внутри главной оси. </p>
                     </div>
                 </section>
+                <section>
+                    <div className="container">
+                        <h2 className="text-center mt-5">
+                            Попробуйте сами:
+                        </h2>
+                        <iframe height="300" width="100%" scrolling="no" title="Flexbox playground" src="https://codepen.io/enxaneta/embed/adLPwv?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                            See the Pen <a href="https://codepen.io/enxaneta/pen/adLPwv">
+                                Flexbox playground</a> by Gabi (<a href="https://codepen.io/enxaneta">@enxaneta</a>)
+                            on <a href="https://codepen.io">CodePen</a>.
+                        </iframe>
+                        <small>Нажать на кнопку <kbd>Result</kbd> и смотреть как меняется состояние и поведение элементов при разных свойствах, используя радио кнопки  </small>
+                    </div>
 
+                </section>
+                <section>
+                    <div className="container">
+                        <h2 className="text-center mt-3">
+                            Fexbox свойства для <em> отдельных дочерних элементов </em>
+                        </h2>
+                    </div>
+                    </section>
             </div>
         );
     }
