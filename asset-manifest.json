@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/react-markup-blog/static/css/main.1ec9d24d.chunk.css",
-    "main.js": "/react-markup-blog/static/js/main.15f49725.chunk.js",
-    "main.js.map": "/react-markup-blog/static/js/main.15f49725.chunk.js.map",
-    "runtime-main.js": "/react-markup-blog/static/js/runtime-main.0fe115ec.js",
-    "runtime-main.js.map": "/react-markup-blog/static/js/runtime-main.0fe115ec.js.map",
+    "main.css": "/react-markup-blog/static/css/main.88772a38.chunk.css",
+    "main.js": "/react-markup-blog/static/js/main.79a2346e.chunk.js",
+    "main.js.map": "/react-markup-blog/static/js/main.79a2346e.chunk.js.map",
+    "runtime-main.js": "/react-markup-blog/static/js/runtime-main.a9427155.js",
+    "runtime-main.js.map": "/react-markup-blog/static/js/runtime-main.a9427155.js.map",
     "static/css/2.81b0985c.chunk.css": "/react-markup-blog/static/css/2.81b0985c.chunk.css",
-    "static/js/2.35b81722.chunk.js": "/react-markup-blog/static/js/2.35b81722.chunk.js",
-    "static/js/2.35b81722.chunk.js.map": "/react-markup-blog/static/js/2.35b81722.chunk.js.map",
-    "static/js/3.f16a1606.chunk.js": "/react-markup-blog/static/js/3.f16a1606.chunk.js",
-    "static/js/3.f16a1606.chunk.js.map": "/react-markup-blog/static/js/3.f16a1606.chunk.js.map",
+    "static/js/2.eb878637.chunk.js": "/react-markup-blog/static/js/2.eb878637.chunk.js",
+    "static/js/2.eb878637.chunk.js.map": "/react-markup-blog/static/js/2.eb878637.chunk.js.map",
+    "static/js/3.aee0b52c.chunk.js": "/react-markup-blog/static/js/3.aee0b52c.chunk.js",
+    "static/js/3.aee0b52c.chunk.js.map": "/react-markup-blog/static/js/3.aee0b52c.chunk.js.map",
     "index.html": "/react-markup-blog/index.html",
     "static/css/2.81b0985c.chunk.css.map": "/react-markup-blog/static/css/2.81b0985c.chunk.css.map",
-    "static/css/main.1ec9d24d.chunk.css.map": "/react-markup-blog/static/css/main.1ec9d24d.chunk.css.map",
-    "static/js/2.35b81722.chunk.js.LICENSE.txt": "/react-markup-blog/static/js/2.35b81722.chunk.js.LICENSE.txt",
+    "static/css/main.88772a38.chunk.css.map": "/react-markup-blog/static/css/main.88772a38.chunk.css.map",
+    "static/js/2.eb878637.chunk.js.LICENSE.txt": "/react-markup-blog/static/js/2.eb878637.chunk.js.LICENSE.txt",
+    "static/media/banner.ac409171.jpg": "/react-markup-blog/static/media/banner.ac409171.jpg",
+    "static/media/flex-direction.86c4ee42.svg": "/react-markup-blog/static/media/flex-direction.86c4ee42.svg",
+    "static/media/flex-wrap.69cd2ad8.svg": "/react-markup-blog/static/media/flex-wrap.69cd2ad8.svg",
+    "static/media/justify-content.a90d98f6.svg": "/react-markup-blog/static/media/justify-content.a90d98f6.svg",
     "static/media/App.scss": "/react-markup-blog/static/media/logo.580724b3.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0fe115ec.js",
+    "static/js/runtime-main.a9427155.js",
     "static/css/2.81b0985c.chunk.css",
-    "static/js/2.35b81722.chunk.js",
-    "static/css/main.1ec9d24d.chunk.css",
-    "static/js/main.15f49725.chunk.js"
+    "static/js/2.eb878637.chunk.js",
+    "static/css/main.88772a38.chunk.css",
+    "static/js/main.79a2346e.chunk.js"
   ]
 }
