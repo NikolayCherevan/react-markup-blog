@@ -33,85 +33,85 @@ class CSS6 extends Component {
                         </p>
                         <div className="code ">
                             <SyntaxHighLighter language="css">
-{`.container { 
+                                {`.container { 
 display: flex; /* or inline-flex */
 }`}
                             </SyntaxHighLighter>
                         </div>
                         <p> Определляет флекс контейнер. Все дочерние элементы будут пытаться выстроиться в линию по горизонтали</p>
                         <p className="text-center mt-3 fw-bold text-decoration-underline">
-                        flex-direction
-                        
+                            flex-direction
+
                         </p>
                         <div className="text-center">
-                        <img src={flexDirection} alt=""/>
+                            <img src={flexDirection} alt="" />
                         </div>
-                      
+
                         <div className="code ">
                             <SyntaxHighLighter language="css">
-{`.container { 
+                                {`.container { 
 flex-direction: row | row-reverse | column | column-reverse;
 }`}
                             </SyntaxHighLighter>
                         </div>
                         <p> Это свойство устанавливает главную ось, тем самым определяя направление размещения гибких элементов в гибком контейнере. устанавливает расположение дочерних элементов в виде горизонтальных строк, либо вертикальных столбцов.</p>
                         <p className="text-center mt-3 fw-bold text-decoration-underline">
-                        flex-wrap
-                        
+                            flex-wrap
+
                         </p>
                         <div className="text-center">
-                        <img src={flexWrap} alt=""/>
+                            <img src={flexWrap} alt="" />
                         </div>
-                      
+
                         <div className="code ">
                             <SyntaxHighLighter language="css">
-{`.container { 
+                                {`.container { 
 flex-wrap: nowrap | wrap | wrap-reverse;
 }`}
                             </SyntaxHighLighter>
                         </div>
                         <p> По умолчанию все гибкие элементы будут пытаться уместиться в одну строку. Вы можете изменить это и разрешить перенос элементов по мере необходимости с помощью этого свойства.</p>
                         <p className="text-center mt-3 fw-bold text-decoration-underline">
-                        flex-flow
-                        
+                            flex-flow
+
                         </p>
                         <div className="text-center">
                         </div>
-                      
+
                         <div className="code ">
                             <SyntaxHighLighter language="css">
-{`.container { 
+                                {`.container { 
 flex-flow: column wrap;
 }`}
                             </SyntaxHighLighter>
                         </div>
                         <p> Это сокращение для <span className="font-monospace">flex-direction</span>  и <span className="font-monospace">flex-wrap</span> свойств, которые вместе определяют основные и поперечные оси гибкого контейнера </p>
                         <p className="text-center mt-3 fw-bold text-decoration-underline">
-                        justify-content
-                        
+                            justify-content
+
                         </p>
                         <div className="text-center">
-                        <img src={justifyContent} alt=""/>
+                            <img src={justifyContent} alt="" />
                         </div>
-                      
+
                         <div className="code ">
                             <SyntaxHighLighter language="css">
-{`.container { 
+                                {`.container { 
 justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
 }`}
                             </SyntaxHighLighter>
                         </div>
                         <p> Это свойство определяет выравнивание по главной оси. Оно помогает распределить лишнее свободное пространство, когда все дочерние элементы имеют фиксированную ширину, либо гибкие, но достигли своего максимального размера. Он также дает некоторый контроль над выравниванием элементов, когда они выходят за пределы строки.</p>
                         <ul class="list-group">
-  <li class="list-group-item"><span className="font-monospace">flex-start </span>(по умолчанию): элементы перемещаются к началу контейнера</li>
-  <li class="list-group-item"><span className="font-monospace">flex-end</span> : элементы перемещаются к концу контейнера</li>
-  <li class="list-group-item"><span className="font-monospace">space-between</span>: дочерние элементы равномерно распределяются в строке; первый элемент находится в начале строки, последний элемент в конце строки</li>
-  <li class="list-group-item"><span className="font-monospace">space-around</span>: элементы равномерно распределены в строке с равным пространством вокруг них</li>
-  <li class="list-group-item"><span className="font-monospace">space-evenly</span>: элементы распределяются таким образом, чтобы расстояние между любыми двумя элементами (и расстояние до краев) было одинаковым</li>
-</ul>
-<hr />
-<p className="mt-3"> <AlertOutlined/> Обратите внимание, что поддержка этих значений браузером имеет нюансы. Например, <span className="font-monospace">space-between </span> некоторые версии Edge никогда не поддерживали, а <span className="font-monospace">start / end / left / right </span> еще нет в Chrome. У MDN  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content">есть подробные графики</a>. Самые безопасные значения <span className="font-monospace">flex-start, flex-endи center</span>.</p>
-<hr />              
+                            <li class="list-group-item"><span className="font-monospace">flex-start </span>(по умолчанию): элементы перемещаются к началу контейнера</li>
+                            <li class="list-group-item"><span className="font-monospace">flex-end</span> : элементы перемещаются к концу контейнера</li>
+                            <li class="list-group-item"><span className="font-monospace">space-between</span>: дочерние элементы равномерно распределяются в строке; первый элемент находится в начале строки, последний элемент в конце строки</li>
+                            <li class="list-group-item"><span className="font-monospace">space-around</span>: элементы равномерно распределены в строке с равным пространством вокруг них</li>
+                            <li class="list-group-item"><span className="font-monospace">space-evenly</span>: элементы распределяются таким образом, чтобы расстояние между любыми двумя элементами (и расстояние до краев) было одинаковым</li>
+                        </ul>
+                        <hr />
+                        <p className="mt-3"> <AlertOutlined /> Обратите внимание, что поддержка этих значений браузером имеет нюансы. Например, <span className="font-monospace">space-between </span> некоторые версии Edge никогда не поддерживали, а <span className="font-monospace">start/end/left/right </span> еще нет в Chrome. У MDN  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content">есть подробные графики</a>. Самые безопасные значения <span className="font-monospace">flex-start, flex-end и center</span>.</p>
+                        <hr />
                     </div>
                 </section>
 
