@@ -110,3 +110,11 @@ footer {
         margin-bottom: 0;
     }
 }
+.relative {
+    width: 100%;
+    height: 100%;
+    display: block;
+    .react-draggable {
+        position: static!important;
+    }
+}

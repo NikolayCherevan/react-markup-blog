@@ -1,0 +1,8 @@
+
+
+@import '../../../../styles/breakpoints';
+@include media("max", "xl") {
+    .relative {
+        display: none;
+    }
+}
