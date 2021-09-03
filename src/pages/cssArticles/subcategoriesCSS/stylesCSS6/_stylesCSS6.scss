@@ -1,0 +1,11 @@
+
+
+@import '../../../../styles/breakpoints';
+@include media("min", "sm") {
+    img {
+        max-width: 50%;
+    }
+}
+div {
+    line-height: 26px;
+}
