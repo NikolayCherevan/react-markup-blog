@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import domImage from './imagesHTML1/dom2.png';
 import SyntaxHighLighter from 'react-syntax-highlighter';
 
 class HTML1 extends Component {
@@ -9,7 +10,7 @@ class HTML1 extends Component {
                  Рендеринг страниц. Инструменты разработки. Кроссбраузерность, валидность верстки. Браузеры. 
                   Базовая HTML - структура. Дерево документа
               </h1>
-              <section>
+              <section className="mt-4">
                 <div className="container">
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
@@ -138,9 +139,9 @@ class HTML1 extends Component {
                         frameborder="0"/>
                     </div>
               </section>
-              <h2 className="mt-4 text-center">Инструменты разработки</h2>
               <section>
                     <div className="container">
+                    <h2 className="mt-4 text-center">Инструменты разработки</h2>
                     <ul className="list-group">
                       <li className="list-group-item" aria-current="true">VS Code/Atom/Sublime Text 3/IntelliJ IDEA</li>
                       <li className="list-group-item">Google Chrome + DevTools</li>
@@ -150,6 +151,154 @@ class HTML1 extends Component {
                       <li className="list-group-item">MDN/StackOverflow/Dash</li>
                       <li className="list-group-item">OpenServer/MAMP</li>
                     </ul>
+                    </div>
+              </section>
+              <section>
+                    <div className="container">
+                      <h2 className="mt-4 text-center">Хорошая верстка. Такое бывает?</h2>
+                      <p className="mt-4">
+                      Рассмотрим основные показатели качественной верстки, и то, как влияет на них валидность кода.
+                      </p> 
+                    <div class="d-flex align-items-start w-100 mt-4">
+                      <div class="nav flex-column nav-pills me-3 w-25" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Кроссбраузерность</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Скорость загрузки</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Микроразметка</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Валидность</button>
+                      </div>
+                      <div class="tab-content w-75" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                          <div className="tab-pane-inner d-flex flex-row justify-content-center">
+                            <div className="row w-100">
+                          <p>
+                            <code>Кроссбраузерность</code> — это одинаковое отображение и работа сайта в различных браузерах. Если не задуматься над этим вопросом на этапе верстки, то, создав сайт, вы увидите, что в разных браузерах он отображается по-разному и не везде корректно.
+                          </p> 
+                          <p>
+                          <strong>Откуда возникла такая проблема?</strong> Дело в том, что браузеры используют разные движки. Браузерный движок занимается загрузкой, обработкой, отображением и расчетами данных. И хоть сегодня существует большое количество различных браузеров, если мы их разложим по используемым движкам,
+                          то увидим, что этих движков не так и много, так как создание своего движка является очень трудоемкой задачей
+                          </p>
+                            </div>
+                          
+                          </div>
+                          
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <div className="tab-pane-inner d-flex flex-row justify-content-center">
+                            <div className="row w-100">
+                            <p>
+                            Правильное отображение всех элементов сайта в соответствии с макетом — не залог того, что валидация сайта полностью выполнена.
+                             Ошибки в коде страниц как правило уменьшают <code>скорость их загрузки</code>, даже если незаметны.
+                             Это влияет на первое впечатление посетителя о сайте и увеличивает показатель отказов.
+                            </p>
+                            <p>
+                            Поведенческие факторы, в свою очередь, являются сигналом для поисковых систем. 
+                            Также скорость загрузки посадочной страницы говорит о ее качестве и влияет на результат аукционов в контекстно-медийной сети.
+                            </p>
+                            </div>
+                          
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <div className="tab-pane-inner d-flex flex-row justify-content-center">
+                            <div className="row w-100">
+                            <p>
+                            Проверка верстки на валидность не является необходимым условием для индексации сайта роботом и не имеет прямой связи с позициями веб-ресурса в поисковой выдаче.
+                             Однако ошибки в коде могут отрицательно сказаться на сканировании <code>микроразметки</code>.
+                            </p>
+                            <p>
+                            Некорректная работа элементов страницы может блокировать часть кода, в том числе и важную для <code>SEO</code> информацию: метатеги, ссылки, структурированные данные. 
+                            Работа над ошибками микроразметки поможет роботу автоматически извлекать метаданные сайта.
+                            </p>
+                            </div>
+                          
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                          <div className="tab-pane-inner d-flex flex-row justify-content-center">
+                            <div className="row w-100">
+                            <p>
+                            Страница сайта состоит из текста и графики. Задача верстки в том, чтобы привести все элементы страницы к единой структуре в формате <code>html</code> и обеспечить корректное отображение для всех пользователей. 
+                            Структурированный и чистый код без ошибок — 
+                            знак качества сайта, необходимая база для дальнейшего его продвижения.
+                            </p>
+                            <p>
+                            <strong>Валидность верстки</strong> — это соответствие html-кода сайта утвержденным критериям. 
+                            Стандарты валидности были разработаны <code>The World Wide Web Consortium (W3C)</code>. У организации есть онлайн-сервис автоматической проверки кода сайта.
+                            </p>
+                            <p>
+                            Протестировать верстку и выявить ее ошибки также могут специальные программы — <code>валидаторы кода</code>.
+                            </p>
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+              </section>
+              <section>
+                    <div className="container">
+                    <h2 className="mt-4 text-center">Как проверить валидность своего кода?</h2>
+                    <ul className="list-group">
+                      <li className="list-group-item" aria-current="true">Офицальный валидатор W3C</li>
+                      <li className="list-group-item">WDG HTML Validator</li>
+                      <li className="list-group-item">XML Validator</li>
+                      <li className="list-group-item">XML Schema Validator</li>
+                    </ul>
+                    </div>
+              </section>
+              <section>
+                    <div className="container">
+                    <h2 className="mt-4 text-center">HTML: Базовая структура</h2>
+                    <p>
+                    Любой <strong>HTML-документ</strong> можно разбить на несколько основных составляющих:
+                      <ul className="mt-3">
+                        <li>Блок <code>head</code>, содержащий мета-информацию о нашем сайте. 
+                          Данные из этого блока не отображаются непосредственно на странице, а служат для её описания, подключения стилей и скриптов.</li>
+                        <li>
+                            Блок <code>body</code> является основным местом, где строится HTML-разметка. Данные в этом блоке будут обработаны и выведены в браузер.
+                        </li>
+                      </ul>
+                      Простейшая разметка в <code>HTML5</code> выглядит следующим образом:
+                    </p>
+                    <SyntaxHighLighter language="html">
+                      {`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello {{ dearUser }}!</h1>
+    <p>We are glad to see you here.</p>
+</body>
+</html>`}
+                            </SyntaxHighLighter>
+                            <div class="alert alert-primary mt-4" role="alert">
+                              Читать подробнее о каждой составляющей <a href="https://habr.com/ru/company/macloud/blog/555082/" target="blank" class="alert-link">тут</a>.
+                            </div>
+                    </div>
+              </section>
+              <section>
+                    <div className="container">
+                    <h2 className="mt-4 text-center">DOM-дерево <code>( дерево документа )</code></h2>
+                    <p>
+                      Основой HTML-документа являются теги.
+                      В соответствии с объектной моделью документа <strong>(«Document Object Model», коротко DOM)</strong>, каждый HTML-тег является объектом.
+                      Вложенные теги являются «детьми» родительского элемента. 
+                      Текст, который находится внутри тега, также является объектом.
+                      Все эти объекты доступны при помощи <strong>JavaScript</strong>, мы можем использовать их для изменения страницы.  
+                    </p>
+                    <div className="row d-flex flex-row justify-content-center">
+                    <img className="w-50" src={domImage} alt="" />
+                      </div>
+                      <div class="alert alert-primary mt-4" role="alert">
+                              Читать подробнее о DOM: <a href="https://developer.mozilla.org/ru/docs/Web/API/Document_Object_Model/Introduction" target="blank" class="alert-link">тут</a>.
+                            </div> 
                     </div>
               </section>
               </div>
