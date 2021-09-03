@@ -1,6 +1,6 @@
 import React from 'react';
-import Home from './pages/Home.jsx'
-
+import Home from './pages/Home.jsx';
+import bootstrap from 'bootstrap';
 import {
     HashRouter
 } from "react-router-dom";
