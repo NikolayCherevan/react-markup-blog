@@ -35,12 +35,13 @@ class CSS6 extends Component {
                 </nav>
                 </div>
               </section> 
-        <div className="banner-wrapper text-center mt-5">
-          <img src={banner} alt="" />
-        </div>
+
     
         <section  id="for_what">
           <div className="container">
+        <div className="banner-wrapper text-center mt-5">
+          <img src={banner} alt="" />
+        </div>
             <h2 className="text-center mt-3">Зачем, а главное - для чего?</h2>
             <div>
               Основная идея

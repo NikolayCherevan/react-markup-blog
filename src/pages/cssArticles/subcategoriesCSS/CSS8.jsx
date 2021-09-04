@@ -3,8 +3,11 @@ import { HashLink as Link } from "react-router-hash-link";
 import banner from "./imagesCSS8/grid-highlight-grid.png";
 import gridInspector from "./imagesCSS8/grid-basic.jpg";
 import gridGarden from "./imagesCSS8/grid-garden.jpg";
+import gridAreas from "./imagesCSS8/areas-grid.jpg";
+import result from "./imagesCSS8/resultgrid.jpg";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import "./stylesCSS8/_stylesCSS8.scss";
+import { AlertOutlined } from "@ant-design/icons";
 class CSS8 extends Component {
   render() {
     return (
@@ -18,20 +21,17 @@ class CSS8 extends Component {
                   <Link to="/cssMain/CSS8#for_what">Что такое grid</Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <Link to="/cssMain/CSS8#props_for_parent">
-                    Fexbox свойства для родительского элемента
+                  <Link to="/cssMain/CSS8#grid-props-parent">
+                    Grid свойства
                   </Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <Link to="/cssMain/CSS8#props_for_child">
-                    Fexbox свойства для дочерних элементов{" "}
+                  <Link to="/cssMain/CSS8#grid-areas">
+                    grid-template-areas свойство
                   </Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <Link to="/cssMain/CSS8#example"> Практический пример </Link>
-                </li>
-                <li className="breadcrumb-item">
-                  <Link to="/cssMain/CSS8#flex-froggy"> Grid игра </Link>
+                  <Link to="/cssMain/CSS8#grid-game"> Grid игра </Link>
                 </li>
                 <li className="breadcrumb-item">
                   <Link to="/cssMain/CSS8#resources">
@@ -47,10 +47,10 @@ class CSS8 extends Component {
         </section>
 
         <section id="for_what">
-          <div className="banner-wrapper text-center mt-5">
-            <img src={banner} alt="" />
-          </div>
           <div className="container">
+            <div className="banner-wrapper text-center mt-5">
+              <img src={banner} alt="" />
+            </div>
             <h2 className="text-center mt-5">Что такое grid?</h2>
 
             <p className="text-center">
@@ -244,6 +244,103 @@ class CSS8 extends Component {
             </div>
           </div>
         </section>
+        <section id="grid-areas">
+          <div className="container">
+            <h2 className="text-center mt-5">grid-template-areas</h2>
+            <p>
+              Определяет шаблон сетки ссылаясь на имена областей, которые заданы
+              с помощью свойства <b> grid-area </b>
+            </p>
+            <p className="mt-5">
+              Представим, что нам нужно создать сетку, которая часто встречается
+              на сайтах:
+            </p>
+            <p className="text-center">
+              <img src={gridAreas} alt="" />
+            </p>
+            <p className="mt-5">
+              Можно было бы разбить на три контейнера и реализовать такое
+              флексами, но можем сделать такую сетку в "один подход" гридами
+            </p>
+            <p className="fw-bold">
+              {" "}
+              <AlertOutlined /> К тому же! Бывают ситуации, когда нельзя
+              изменить разметку. А она у нас такая:{" "}
+            </p>
+            <SyntaxHighLighter language="html">
+              {`<div class="wrapper">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+</div>`}
+            </SyntaxHighLighter>
+            <p>
+              <b> 1)</b> <u> Каждому блоку задаем имя</u>
+            </p>
+            <SyntaxHighLighter language="css">
+              {`.header {
+    grid-area: hd;
+}
+.footer {
+    grid-area: ft;
+}
+.content {
+    grid-area: main;
+}
+.sidebar {
+    grid-area: sd;
+}`}
+            </SyntaxHighLighter>
+            <b> 2)</b> <u> Задаем свойства родительскому элементу:</u>
+            <SyntaxHighLighter language="css">
+              {`.wrapper {
+    display: grid; 
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd hd hd hd   hd   hd   hd   hd   hd"
+      "sd sd sd main main main main main main"
+      "ft ft ft ft   ft   ft   ft   ft   ft";
+}`}
+            </SyntaxHighLighter>
+            <div className="alert alert-dark mt-4" role="alert">
+              <kbd>grid-auto-rows</kbd> ранее не рассматривалось. но не
+              пугайтесь! Свойство задает минимальную высоту строки({" "}
+              <kbd>minmax(100px..</kbd> ), при этом, если контента будет больше
+              чем на 100px - строка примет значение <kbd>minmax(.., auto)</kbd>{" "}
+              - то бишь, подстроится под высоту содержимого.
+            </div>
+            <p className="text-center">Результат:</p>
+            <div class="wrapper wrapper-area">
+              <div class="header">Header</div>
+              <div class="sidebar">Sidebar</div>
+              <div class="content">Content</div>
+              <div class="footer">Footer</div>
+            </div>
+ <div className="alert alert-dark mt-4" role="alert">
+              <p> Постарайтесь провести параллели между <kbd>grid-template-areas</kbd> схемой и отображением блоков. Мы задали 9 колонок (9 фракций - <code>grid-template-columns: repeat(9, 1fr);</code> ), а далее 
+просто создали схему в свойстве <kbd>grid-template-areas</kbd> , с именами блоков и их расположением:
+<p className="text-center"> <img src={result} alt="" /></p>
+</p>
+            </div>
+<p>Пример <kbd>grid-template-areas</kbd> схемы с пустым местом: </p>
+            <SyntaxHighLighter language="css">
+              {`.wrapper {
+    grid-template-areas:
+        "hd hd hd hd   hd   hd   hd   hd   hd"
+        "sd sd sd main main main main main main"
+        ".  .  .  ft   ft   ft   ft   ft   ft";
+}`}
+            </SyntaxHighLighter>
+          <div class="wrapper wrapper-area area-free-space">
+              <div class="header">Header</div>
+              <div class="sidebar">Sidebar</div>
+              <div class="content">Content</div>
+              <div class="footer">Footer</div>
+            </div>
+          </div>
+        </section>
         <section id="grid-game">
           <div className="container">
             <h2 className="text-center mt-5">Изучить grid свойства в игре</h2>
@@ -259,8 +356,8 @@ class CSS8 extends Component {
             </div>
             <p>
               Пройдите игру, чтобы запомнить поведение элементов в grid сетке
-              при различных свойствах. Логика проста - вода в игре - дочерний
-              блок, его нужно переместить на овощи, применяя grid свойства
+              при различных свойствах. Логика проста - вода в игре - дочерние
+              блоки, их нужно переместить на овощи, применяя grid свойства
             </p>
             <p className="text-center">
               <a
