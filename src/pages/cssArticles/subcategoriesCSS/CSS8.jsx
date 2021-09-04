@@ -123,13 +123,20 @@ class CSS8 extends Component {
               <div>Four</div>
               <div>Five</div>
             </div>
+            <div className="alert alert-primary mt-4" role="alert">
+              Логика проста - сколько значений идет в свойстве{" "}
+              <kbd>grid-template-columns</kbd> - столько колонок будет создано
+              гридом
+            </div>
             <h4 className="text-center fw-bold mt-5">grid-template-rows</h4>
             <p>
               Определяем ряды - аналогично с <kbd>grid-template-columns</kbd> но
               применимо к строкам{" "}
             </p>
-  <h4 className="text-center fw-bold mt-5">Единица измерения fr</h4>
-            <p>fr - доля пространства от общей ширины контейнера. Пример ниже</p>
+            <h4 className="text-center fw-bold mt-5">Единица измерения fr</h4>
+            <p>
+              fr - доля пространства от общей ширины контейнера. Пример ниже
+            </p>
             <SyntaxHighLighter language="css">
               {`.wrapper {
   display: grid;
@@ -144,10 +151,16 @@ class CSS8 extends Component {
               <div>Four</div>
               <div>Five</div>
             </div>
-<div className="alert alert-dark mt-4" role="alert">
-                   Обратите внимание, что теперь колонки респонсивные, на просмотре с телефона исчез нижний скролл, так как мы разделили их на равные фракции, которые занимают равные доли от всей ширины контейнера.
-                  </div>
-             <p> <em> Попробуем дать первой колонке  </em> 2fr, <em> посмотрим на результат</em> </p>
+            <div className="alert alert-dark mt-4" role="alert">
+              Обратите внимание, что теперь колонки респонсивные, на просмотре с
+              телефона исчез нижний скролл, так как мы разделили их на равные
+              фракции, которые занимают равные доли от всей ширины контейнера.
+            </div>
+            <p>
+              {" "}
+              <em> Попробуем дать первой колонке </em> 2fr,{" "}
+              <em> посмотрим на результат</em>{" "}
+            </p>
             <SyntaxHighLighter language="css">
               {`.wrapper {
   display: grid;
@@ -162,9 +175,73 @@ class CSS8 extends Component {
               <div>Four</div>
               <div>Five</div>
             </div>
-<div className="alert alert-dark mt-4" role="alert">
-                   Вполне ожидаемое поведение, не так ли? Первой колонке мы дали возможность "захватить" больше пространства. Если быть более точным - первая колонка занимает 50% от ширины родителя, вторая и третья  - по 25, соответственно
-                  </div>
+            <div className="alert alert-dark mt-4" role="alert">
+              Вполне ожидаемое поведение, не так ли? Первой колонке мы дали
+              возможность "захватить" больше пространства. Если быть более
+              точным - первая колонка занимает 50% от ширины родителя, вторая и
+              третья - по 25, соответственно
+            </div>
+            <h4 className="text-center fw-bold mt-5">repeat()</h4>
+            <p>
+              Фронты -{" "}
+              <span className="text-decoration-line-through">
+                {" "}
+                люди ленивые{" "}
+              </span>
+              . Представьте, что нам нужно отрисовать 50 колонок! Значение
+              свойства будет иметь 50 фракций - 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+              1fr... Можно и так. Но мы нарушаем тем самым чистоту кода.
+              Представьте такую колбасину в файле css среди иного кода -
+              некрасиво, непрактично.
+            </p>
+            <em>Решение есть!</em>
+            <SyntaxHighLighter language="css">
+              {`.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); //аналогично к grid-template-columns: 1fr 1fr 1fr;
+}`}
+            </SyntaxHighLighter>
+            <p className="text-center">Результат ожидаем:</p>
+            <div class="wrapper wrapper3">
+              <div>One</div>
+              <div>Two</div>
+              <div>Three</div>
+              <div>Four</div>
+              <div>Five</div>
+            </div>
+            <h4 className="text-center fw-bold mt-5">Отступы (gap)</h4>
+            <p>
+              Ранее требовалось знание понятия "отрицательные маржины", чтобы
+              получить отступы между колонками и строками. Сейчас у нас есть gap
+            </p>
+            <SyntaxHighLighter language="css">
+              {`.wrapper {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 10px;
+   grid-row-gap: 20px;
+}`}
+            </SyntaxHighLighter>
+            <p className="text-center">Результат:</p>
+            <div class="wrapper wrapper-gap">
+              <div>One</div>
+              <div>Two</div>
+              <div>Three</div>
+              <div>Four</div>
+              <div>Five</div>
+            </div>
+            <div className="alert alert-primary mt-4" role="alert">
+              Более подробно о grid свойствах и дополнительные (редко
+              используемые свойства):{" "}
+              <a
+                href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8"
+                target="blank"
+                className="alert-link"
+              >
+                тут
+              </a>
+              .
+            </div>
           </div>
         </section>
         <section id="grid-game">
