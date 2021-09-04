@@ -519,7 +519,7 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
                   <a class="btn btn-primary" role="button">
                     1.
                   </a>{" "}
-                  сверстать сетку, используя <strong>флексы</strong>
+                  Cверстать сетку, используя <strong>флексы</strong>
                   <p className="text-center">
                     <img src={hw} alt="" />
                   </p>
