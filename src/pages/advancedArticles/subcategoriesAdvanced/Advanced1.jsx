@@ -12,7 +12,8 @@ class Advanced1 extends Component {
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item"><a href="#">GIT</a></li>
                     <li className="breadcrumb-item"><a href="#">Терминал</a></li>
-                    <li className="breadcrumb-item"><a href="#">Работа с GIT/Основные команды</a></li>
+                    <li className="breadcrumb-item"><a href="#">Работа с GIT / Основные команды</a></li>
+                    <li className="breadcrumb-item"><a href="#">GitHub Pages</a></li>
                     <li className="breadcrumb-item"><a href="#">Встроенные стили браузера</a></li>
                     <li className="breadcrumb-item"><a href="#">CSS Reset / CSS Normalize</a></li>
                     <li className="breadcrumb-item"><a href="#">Домашнее задание</a></li>
@@ -66,7 +67,7 @@ class Advanced1 extends Component {
                         mkdir hello
                         cd hello
                         touch hello.html
-                        code index.html
+                        code hello.html
                       `}
                     </SyntaxHighLighter>  
                     <div className="alert alert-primary mt-4" role="alert">
@@ -157,11 +158,32 @@ class Advanced1 extends Component {
               </section>
               <section>
                     <div className="container">
+                    <h2 className="mt-4 text-center">GitHub Pages</h2>
+                    <p>Сегодня мы хотим разместить нашу простую HTML-страницу в интернете таким образом, чтобы она стала доступна всем.
+                        Если бы мы писали полноценное веб-приложение с какой-то логикой, например, с регистрацией и авторизацией пользователей, отправкой и 
+                        сохранением информации, то нам требовалось бы достаточно комплексное решение с серверами и, возможно, базами данных. 
+                        Конечному посетителю в любом случае будет приходить HTML, но на стороне сервера могут происходить самые разные сложные операции.</p>
+                    <p>Но под задачи меньшего калибра требуется соответствующее решение.</p>
+                    <p>Для того, чтобы на основе вашего репозитория создать GitHub Pages достаточно пары шагов:</p>
+                    <ul className="list-group">
+                      <li className="list-group-item" aria-current="true"><code>1.</code> - файл <kbd>index.html</kbd> должен лежать в корневом каталоге.</li>
+                      <li className="list-group-item"><code>2.</code> - должны быть грамотно прописаны пути к остальным файлам (<kbd>style.css</kbd>, файлы изображений и т.д.).</li>
+                      <li className="list-group-item"><code>3.</code> - зайти в <kbd>Settings</kbd> - <kbd>Pages</kbd> - <kbd>Save</kbd>.</li>
+                      <li className="list-group-item"><code>4.</code> - через несколько мгновений страница станет доступна по вашему адресу https://username.github.io/repo-name</li>
+                    </ul>
+                    <iframe id="ytplayer" className="w-100 mt-4" type="text/html" width="100%" height="520"
+                        src="https://www.youtube.com/embed/QyFcl_Fba-k"
+                   frameborder="0"/>
+                   <small>Полный путь с момента создания репозитория и до создания на его основе <code>GitHub Pages</code></small>
+                    </div>
+              </section>
+              <section>
+                    <div className="container">
                     <h2 className="mt-4 text-center">Встроенные стили браузеров</h2>
                     <p>С течением времени популярные браузеры обросли своими надстройками на CSS и он перестал быть таким уж чистым. 
-                        Это значит, что когда мы применяем какой-то из элементов, например - <kbd>h1</kbd>, то с ним в комплекте идут заготовленные браузером стили.
+                        Это значит, что когда мы используем какой-то из элементов, например - <kbd>h1</kbd>, то с ним в комплекте идут заготовленные браузером стили.
                         </p>
-                        <p>И есть несколько способов от этого избавиться</p>
+                        <p>И есть несколько способов ( больше 10, так точно - потому как они разные и у каждого разработчика свой пресет к которому он привыкает ) от этого избавиться.</p>
                         <h3 className="text-center mt-4">Сброс стилей reset.css</h3>
                         <h4>Сброс стилей Minimum</h4>
                            <SyntaxHighLighter language="css">
@@ -226,6 +248,9 @@ class Advanced1 extends Component {
                     <div className="alert alert-primary mt-4" role="alert">
                     CSS Reset vs CSS Normalize: <a href="https://forwww.com/difference_between_normalize_css_and_reset_css/" target="blank" className="alert-link">тут</a>.
                   </div>
+                  <div className="alert alert-warning mt-2" role="alert">
+                      <strong>Спойлер:</strong> И <a href="https://cdnjs.com/libraries/reseter.css/1.0.8" target="blank" className="alert-link">Reset</a>, и <a href="https://cdnjs.com/libraries/normalize" target="blank" className="alert-link">Normalize</a> можно подключить с помощью <strong>cdnjs</strong>. 
+                    </div>
                     </div>
               </section>
               <section>
@@ -240,9 +265,9 @@ class Advanced1 extends Component {
                     <h2 className="mt-4 text-center">Домашнее задание</h2>
                     <div class="bd-callout bd-callout-warning">
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><a class="btn btn-primary" href="#" role="button">1.</a> Создайте новый проект с <strong>HTML и CSS</strong>  файлами. Проанализируйте, какой из стилей имеет наивысший приоритет.</li>
-                      <li class="list-group-item"><a class="btn btn-primary" href="#" role="button">2.</a> Установить <strong>VS Code</strong>, <a href="https://www.youtube.com/watch?v=2ntJ1ETtHi8">дополнительные плагины</a></li>
-                      <li class="list-group-item"><a class="btn btn-primary" href="#" role="button">3.</a> Читать дополнительную информацию (история мира WEB, о архитектуре “сервер-клиент”, передача данных, известные разработчики) </li>
+                      <li class="list-group-item"><a class="btn btn-primary" href="#" role="button">1.</a> Установи <strong>GIT</strong>. Проделай все шаги по созданию репозитория, запушь туда первые изменения.</li>
+                      <li class="list-group-item"><a class="btn btn-primary" href="#" role="button">2.</a> Верстай <strong>ДЗ</strong> (<a href="https://www.youtube.com/watch?v=2ntJ1ETtHi8">макет тут</a>)</li>
+                      <li class="list-group-item"><a class="btn btn-primary" href="#" role="button">3.</a> Воспользуйся <strong>GitHub Pages</strong>, чтобы сдать задание выше.</li>
                     </ul>
                     </div>
                     </div>
