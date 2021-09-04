@@ -7,12 +7,12 @@ import gridAreas from "./imagesCSS8/areas-grid.jpg";
 import result from "./imagesCSS8/resultgrid.jpg";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import "./stylesCSS8/_stylesCSS8.scss";
-import { AlertOutlined } from "@ant-design/icons";
+import { AlertOutlined,ArrowDownOutlined,ArrowUpOutlined} from "@ant-design/icons";
 class CSS8 extends Component {
   render() {
     return (
       <div>
-        <h1>Grid. Поддержка браузерами. Debug tools in Chrome</h1>
+        <h1>Grid. Поддержка браузерами. Debug tools в Chrome</h1>
         <section className="mt-4">
           <div className="container">
             <nav aria-label="breadcrumb">
@@ -32,6 +32,11 @@ class CSS8 extends Component {
                 </li>
                 <li className="breadcrumb-item">
                   <Link to="/cssMain/CSS8#grid-game"> Grid игра </Link>
+                </li>
+                <li className="breadcrumb-item">
+                  <Link to="/cssMain/CSS8#devTools">
+                    DevTools Chrome
+                  </Link>
                 </li>
                 <li className="breadcrumb-item">
                   <Link to="/cssMain/CSS8#resources">
@@ -370,6 +375,16 @@ class CSS8 extends Component {
             </p>
           </div>
         </section>
+   <section id="devTools">
+          <div className="container">
+            <h2 className="text-center mt-5"> DevTools Chrome </h2>
+            <p className="mt-5 alert bg-dark text-light"> Chrome был всегда отличным помощником front-end разработчика. В режиме реального 
+            времени вы можете перетаскивать блоки по дереву, менять стили, чтобы заранее знать как будет выглядить тот или иной блок после применения 
+            вашего кода, проверять focus, hover... состояния и много другое. Чтобы узнать более подробно - рекомендовано видео к просмотру : <ArrowDownOutlined /><ArrowDownOutlined /><ArrowDownOutlined />
+            </p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/PDP9NNKtEuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </section>
         <section id="resources">
           <div className="container">
             <h2 className="text-center mt-5">Дополнительные ресурсы</h2>
@@ -398,7 +413,7 @@ class CSS8 extends Component {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-              <p> 2 минуты, чтобы понять базу grid. Отличный канал про IT</p>
+              <p> 2 минуты, чтобы понять базу grid. Отличный канал про IT <ArrowUpOutlined /><ArrowUpOutlined /><ArrowUpOutlined /></p>
             </p>
           </div>
         </section>
