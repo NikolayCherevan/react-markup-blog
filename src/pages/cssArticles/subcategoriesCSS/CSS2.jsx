@@ -43,7 +43,7 @@ class CSS2 extends Component {
                     <p>
                         Как и с обычными классами, можно совмещать вместе в одном селекторе любое число псевдоклассов.
                     </p>
-                    <h2 className="text-center mt-4">Распространенные псевдоклассы</h2>
+                    <h3 className="text-center mt-4">Распространенные псевдоклассы</h3>
                     <ul className="list-group">
                       <li className="list-group-item" aria-current="true"><code>:active</code> - Подходит, когда пользователь активирует (например, щёлкает мышью) элемент.</li>
                       <li className="list-group-item"><code>:checked</code> - Соответствует переключателю или флажку в выбранном состоянии.</li>
@@ -94,7 +94,7 @@ class CSS2 extends Component {
                     <div className="alert alert-dark" role="alert">
                       <strong>Примечание:</strong> В отличие от <code>псевдоэлементов</code>, псевдоклассы могут быть использованы для стилизации элемента на основе его состояния.
                     </div>
-                    <h2 className="text-center mt-4">Распространенные псевдоэлементы</h2>
+                    <h3 className="text-center mt-4">Распространенные псевдоэлементы</h3>
                     <ul className="list-group">
                       <li className="list-group-item" aria-current="true"><code>::after</code> - Соответствует элементу, который допускает стилизацию и появляется после текущего содержимого порождающего элемента.</li>
                       <li className="list-group-item"><code>::before</code> - Соответствует элементу, который допускает стилизацию и появляется перед текущим содержимым порождающего элемента.</li>
