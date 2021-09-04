@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import domImage from './imagesHTML1/dom2.png';
 import SyntaxHighLighter from 'react-syntax-highlighter';
 

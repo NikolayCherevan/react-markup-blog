@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import boxModel from './imagesCSS4/box-model.png';
 import fonts from './imagesCSS4/fonts.png';
 import SyntaxHighLighter from 'react-syntax-highlighter';
@@ -12,19 +13,19 @@ class CSS4 extends Component {
                 <div className="container">
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><a href="#">Блочная модель</a></li>
-                    <li className="breadcrumb-item"><a href="#">Структура блочной модели</a></li>
-                    <li className="breadcrumb-item"><a href="#">Примеры использования</a></li>
-                    <li className="breadcrumb-item"><a href="#">Поток и способы его нарушить</a></li>
-                    <li className="breadcrumb-item"><a href="#">Интересные свойства</a></li>
-                    <li className="breadcrumb-item"><a href="#">Font Awesome</a></li>
-                    <li className="breadcrumb-item"><a href="#">Google Fonts</a></li>
-                    <li className="breadcrumb-item"><a href="#">Домашнее задание</a></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS4#block">Блочная модель</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS4#structure">Структура блочной модели</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS4#exapmles">Примеры использования</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS4#flow">Поток и способы его нарушить</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS4#values">Интересные свойства</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS4#font">Font Awesome</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS4#google">Google Fonts</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS4#рщьуцщкл">Домашнее задание</Link></li>
                   </ol>
                 </nav>
                 </div>
               </section> 
-              <section>
+              <section id="block">
                   <div className="container">
                       <h2 className="text-center mt-4">Блочная модель</h2>
                       <p>Каждый элемент в CSS заключён в блок, и понимание поведения этих блоков — 
@@ -127,7 +128,7 @@ class CSS4 extends Component {
                     <small>Блочная модель в примерах</small>
                   </div>
               </section>
-              <section>
+              <section id="structure">
                     <div className="container">
                     <h2 className="mt-4 text-center">Структура блочной модели</h2>
                     <p>Если мы говорим о блочной модели, то я бы посмотрел на нее, как на луковицу - она выстраивается слой за слоем.
@@ -188,7 +189,7 @@ class CSS4 extends Component {
                   </div>
                     </div>
               </section>
-              <section>
+              <section id="flow">
                   <div className="container">
                       <h2 className="text-center mt-4">Поток</h2>
                       <p><strong>Поток</strong> — еще одно понятие, знакомство с которым обязательно. 
@@ -214,7 +215,7 @@ class CSS4 extends Component {
                     </ul>
                   </div>
               </section>
-              <section>
+              <section id="values">
                     <div className="container">
                     <h2 className="mt-4 text-center">Интересные свойства:</h2>
                     <div className="alert alert-warning mt-2" role="alert">
@@ -233,7 +234,7 @@ class CSS4 extends Component {
                   </div>
                     </div>
               </section>
-              <section>
+              <section id="font">
                     <div className="container">
                     <h2 className="mt-4 text-center">Font Awesome</h2>
                     <p>Иконочный шрифт и CSS-инструментарий. Font Awesome предлагает вам масштабируемые векторные иконки, 
@@ -258,7 +259,7 @@ class CSS4 extends Component {
                     <small>Пример использования <code>font-awesome</code></small>
                     </div>
               </section>
-              <section>
+              <section id="google">
                     <div className="container">
                     <h2 className="mt-4 text-center">Google Fonts</h2>
                     <p>Есть простой и удобный способ подключить нестандартный шрифт — использовать <kbd>Google Fonts</kbd>. 
@@ -292,7 +293,7 @@ class CSS4 extends Component {
                     </div>
               </section>
 
-              <section>
+              <section id="homework">
                     <div className="container">
                     <h2 className="mt-4 text-center">Домашнее задание</h2>
                     <div class="bd-callout bd-callout-warning">

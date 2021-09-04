@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import SyntaxHighLighter from 'react-syntax-highlighter';
 
 class CSS2 extends Component {
@@ -10,16 +11,16 @@ class CSS2 extends Component {
                 <div className="container">
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><a href="#">Псевдоклассы</a></li>
-                    <li className="breadcrumb-item"><a href="#">Псевдоэлементы</a></li>
-                    <li className="breadcrumb-item"><a href="#">Примеры использования</a></li>
-                    <li className="breadcrumb-item"><a href="#">Комментарии</a></li>
-                    <li className="breadcrumb-item"><a href="#">Домашнее задание</a></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS2#pseudoclasses">Псевдоклассы</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS2#pseudoelements">Псевдоэлементы</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS2#examples">Примеры использования</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS2#comments">Комментарии</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS2#homework">Домашнее задание</Link></li>
                   </ol>
                 </nav>
                 </div>
               </section> 
-              <section>
+              <section id="pseudoclasses">
                   <div className="container">
                       <h2 className="text-center mt-4">Что такое псевдокласс?</h2>
                       <p><strong>Псевдокласс</strong> в CSS — это ключевое слово, добавленное к селектору, которое определяет его особое состояние. 
@@ -67,7 +68,7 @@ class CSS2 extends Component {
                   </div>
                   </div>
               </section>
-              <section>
+              <section id="pseudoelements">
                   <div className="container">
                       <h2 className="text-center mt-4">Что такое псевдоэлемент?</h2>
                       <p><strong>Псевдокласс</strong> в CSS — это ключевое слово, добавляемое к селектору, которое позволяет стилизовать определённую
@@ -114,7 +115,7 @@ class CSS2 extends Component {
                   </div>
                   </div>
               </section>
-              <section>
+              <section id="examples">
                     <div className="container">
                     <h2 className="mt-4 text-center">Примеры использования</h2>
                     <iframe height="520" width="100%" scrolling="no" title="simple navbars" src="https://codepen.io/igorpinhh/embed/eYWvLrB?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
@@ -131,7 +132,7 @@ class CSS2 extends Component {
                     <small>Пример совместного использования <code>псевдоклассов</code> и <code>псевдоэлементов</code> для реализации формы.</small>
                     </div>
               </section>
-              <section>
+              <section id="comments">
                     <div className="container">
                     <h2 className="mt-4 text-center">Комментарии</h2>
                     <p>Текст внутри комментария не отображается браузером на странице. Комментарии обычно используются в следующих случаях:</p>
@@ -180,7 +181,7 @@ class CSS2 extends Component {
                     </div>
               </section>
 
-              <section>
+              <section id="homework">
                     <div className="container">
                     <h2 className="mt-4 text-center">Домашнее задание</h2>
                     <div class="bd-callout bd-callout-warning">

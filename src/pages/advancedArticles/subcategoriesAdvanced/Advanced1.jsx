@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import SyntaxHighLighter from 'react-syntax-highlighter';
 
 class Advanced1 extends Component {
@@ -10,18 +11,18 @@ class Advanced1 extends Component {
                 <div className="container">
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><a href="#">GIT</a></li>
-                    <li className="breadcrumb-item"><a href="#">Терминал</a></li>
-                    <li className="breadcrumb-item"><a href="#">Работа с GIT / Основные команды</a></li>
-                    <li className="breadcrumb-item"><a href="#">GitHub Pages</a></li>
-                    <li className="breadcrumb-item"><a href="#">Встроенные стили браузера</a></li>
-                    <li className="breadcrumb-item"><a href="#">CSS Reset / CSS Normalize</a></li>
-                    <li className="breadcrumb-item"><a href="#">Домашнее задание</a></li>
+                    <li className="breadcrumb-item"><Link to="/advancedMain/Advanced1#git">GIT</Link></li>
+                    <li className="breadcrumb-item"><Link to="/advancedMain/Advanced1#terminal">Терминал</Link></li>
+                    <li className="breadcrumb-item"><Link to="/advancedMain/Advanced1#workflow">Работа с GIT / Основные команды</Link></li>
+                    <li className="breadcrumb-item"><Link to="/advancedMain/Advanced1#github-pages">GitHub Pages</Link></li>
+                    <li className="breadcrumb-item"><Link to="/advancedMain/Advanced1#styles">Встроенные стили браузера</Link></li>
+                    <li className="breadcrumb-item"><Link to="/advancedMain/Advanced1#css-reset">CSS Reset / CSS Normalize</Link></li>
+                    <li className="breadcrumb-item"><Link to="/advancedMain/Advanced1#homework">Домашнее задание</Link></li>
                   </ol>
                 </nav>
                 </div>
               </section> 
-              <section>
+              <section id="git">
                   <div className="container">
                       <h2 className="text-center mt-4">GIT</h2>
                       <p><strong>Git</strong> — система управления версиями с распределенной архитектурой.
@@ -40,7 +41,7 @@ class Advanced1 extends Component {
                   </div>
                   </div>
               </section>
-              <section>
+              <section id="terminal">
                   <div className="container">
                       <h2 className="text-center mt-4">Терминал</h2>
                       <p><strong>Интерфейс командной строки</strong> <code>(Command line interface или CLI)</code> - это один из первых интерфейсов взаимодействия с пользоватлем. Но до сих пор очень даже актуальный и востребованный.</p>
@@ -87,7 +88,7 @@ class Advanced1 extends Component {
                    frameborder="0"/>
                   </div>
               </section>
-              <section>
+              <section id="workflow">
                   <div className="container">
                       <h2 className="text-center mt-4">Начать работу с GIT</h2>
                       <div className="alert alert-warning mt-2" role="alert">
@@ -156,7 +157,7 @@ class Advanced1 extends Component {
                    <small>Наглядное пособие по работе с <code>GIT</code></small>    
                   </div>
               </section>
-              <section>
+              <section id="github-pages">
                     <div className="container">
                     <h2 className="mt-4 text-center">GitHub Pages</h2>
                     <p>Сегодня мы хотим разместить нашу простую HTML-страницу в интернете таким образом, чтобы она стала доступна всем.
@@ -177,13 +178,13 @@ class Advanced1 extends Component {
                    <small>Полный путь с момента создания репозитория и до создания на его основе <code>GitHub Pages</code></small>
                     </div>
               </section>
-              <section>
+              <section id="styles">
                     <div className="container">
                     <h2 className="mt-4 text-center">Встроенные стили браузеров</h2>
                     <p>С течением времени популярные браузеры обросли своими надстройками на CSS и он перестал быть таким уж чистым. 
                         Это значит, что когда мы используем какой-то из элементов, например - <kbd>h1</kbd>, то с ним в комплекте идут заготовленные браузером стили.
                         </p>
-                        <p>И есть несколько способов ( больше 10, так точно - потому как они разные и у каждого разработчика свой пресет к которому он привыкает ) от этого избавиться.</p>
+                        <p id="css-reset">И есть несколько способов ( больше 10, так точно - потому как они разные и у каждого разработчика свой пресет к которому он привыкает ) от этого избавиться.</p>
                         <h3 className="text-center mt-4">Сброс стилей reset.css</h3>
                         <h4>Сброс стилей Minimum</h4>
                            <SyntaxHighLighter language="css">
@@ -260,7 +261,7 @@ class Advanced1 extends Component {
                     </div>
               </section>
 
-              <section>
+              <section id="homeworks">
                     <div className="container">
                     <h2 className="mt-4 text-center">Домашнее задание</h2>
                     <div class="bd-callout bd-callout-warning">

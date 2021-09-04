@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import tag from './imagesHTML2/tag.jpg';
 import lipsum from './imagesHTML2/lipsum.png';
 import formats from './imagesHTML2/formats.jpg';
@@ -14,21 +15,21 @@ class HTML2 extends Component {
                 <div className="container">
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><a href="#">HTML</a></li>
-                    <li className="breadcrumb-item"><a href="#">HTML тег</a></li>
-                    <li className="breadcrumb-item"><a href="#">Блочные/строчные</a></li>
-                    <li className="breadcrumb-item"><a href="#">Базовые теги</a></li>
-                    <li className="breadcrumb-item"><a href="#">Таблицы</a></li>
-                    <li className="breadcrumb-item"><a href="#">Lorem Ipsum</a></li>
-                    <li className="breadcrumb-item"><a href="#">Ссылки</a></li>
-                    <li className="breadcrumb-item"><a href="#">Изображения</a></li>
-                    <li className="breadcrumb-item"><a href="#">HTML basic layouts</a></li>
-                    <li className="breadcrumb-item"><a href="#">Домашнее задание</a></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML2#html">HTML</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML2#tag">HTML тег</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML2#blocks">Блочные/строчные</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML2#basic">Базовые теги</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML2#tables">Таблицы</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML2#lorem">Lorem Ipsum</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML2#links">Ссылки</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML2#images">Изображения</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML2#layout">HTML basic layouts</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML2#homework">Домашнее задание</Link></li>
                   </ol>
                 </nav>
                 </div>
               </section>
-              <section>
+              <section id="html">
                   <div className="container">
                       <h2 className="mt-4 text-center">HTML. Что за зверь?</h2>
                       <p>

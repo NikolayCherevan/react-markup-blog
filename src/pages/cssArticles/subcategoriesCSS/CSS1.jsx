@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import rules from './imagesCSS1/rules.png';
 import source from './imagesCSS1/source.jpg';
 import without_source from './imagesCSS1/without_source.jpg';
@@ -13,19 +14,19 @@ class CSS1 extends Component {
                 <div className="container">
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><a href="#">CSS</a></li>
-                    <li className="breadcrumb-item"><a href="#">CSS правила</a></li>
-                    <li className="breadcrumb-item"><a href="#">Внешние/Внутренние/Встроенные</a></li>
-                    <li className="breadcrumb-item"><a href="#">Class & id</a></li>
-                    <li className="breadcrumb-item"><a href="#">CSS-селекторы</a></li>
-                    <li className="breadcrumb-item"><a href="#">Вес CSS-селекторов</a></li>
-                    <li className="breadcrumb-item"><a href="#">Source Map</a></li>
-                    <li className="breadcrumb-item"><a href="#">Домашнее задание</a></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS1#css">CSS</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS1#css-rules">CSS правила</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS1#styles">Внешние/Внутренние/Встроенные</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS1#classes">Class & id</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS1#selectors">CSS-селекторы</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS1#css-weight">Вес CSS-селекторов</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS1#source-map">Source Map</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS1#homework">Домашнее задание</Link></li>
                   </ol>
                 </nav>
                 </div>
               </section>
-              <section>
+              <section id="css">
                   <div className="container">
                       <h2 className="mt-4 text-center">CSS. Кто такой?</h2>
                       <p>
@@ -59,7 +60,7 @@ class CSS1 extends Component {
                   </div>
                   
               </section>
-              <section>
+              <section id="css-rules">
                   <div className="container">
                       <h2 className="mt-4 text-center">CSS-правила</h2>
                       <div className="row d-flex flex-row justify-content-center">
@@ -86,7 +87,7 @@ class CSS1 extends Component {
                   </div>
                   </div>
               </section>
-              <section>
+              <section id="styles">
                   <div className="container">
                       <h2 className="mt-4 text-center">Внешние <code>vs</code> Внутренние <code>vs</code> Встроенные</h2>
                       <p>Существует 3 способа, как осуществить подключение <code>CSS стилей</code> для вашего сайта: вы можете использовать глобальные стили CSS, 
@@ -168,7 +169,7 @@ class CSS1 extends Component {
                   </div>
                   </div>
               </section>
-              <section>
+              <section id="classes">
                   <div className="container">
                       <h2 className="text-center mt-4">Как разделять одинаковые элементы? <strong>Class & id</strong></h2>
                       <p>Согласись - писать встроенные элементы для каждого элемента не очень-то и удобно,
@@ -209,7 +210,7 @@ class CSS1 extends Component {
                     </div>
                   </div>
               </section>
-            <section>
+            <section id="selectors">
                 <div className="container">
                     <h2 className="text-center mt-4">CSS-селекторы</h2>
                     <ul className="list-group">
@@ -254,7 +255,7 @@ class CSS1 extends Component {
                             </SyntaxHighLighter>
                 </div>
             </section>
-            <section>
+            <section id="css-weight">
                 <div className="container">
                     <h2 className="text-center mt-4">Вес CSS-селекторов</h2>
                     <p>Нет, здесь не идёт речь об их реальном весе (его нет), а также о количестве символов. 
@@ -271,7 +272,7 @@ class CSS1 extends Component {
                   </div>
                 </div>
             </section>
-            <section>
+            <section id="source-map">
                 <div className="container">
                     <h2 className="text-center mt-4">Source Map. Что делать, если файлов много?</h2>
                     <p>Source Maps нужны для проектов, где происходит сборка нескольких файлов в один, например, компиляция файлов scss в один 
@@ -303,7 +304,7 @@ class CSS1 extends Component {
                     </div>
               </section>
 
-              <section>
+              <section id="homework">
                     <div className="container">
                     <h2 className="mt-4 text-center">Домашнее задание</h2>
                     <div class="bd-callout bd-callout-warning">
