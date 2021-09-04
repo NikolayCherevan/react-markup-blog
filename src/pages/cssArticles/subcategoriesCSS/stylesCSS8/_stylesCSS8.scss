@@ -1,0 +1,27 @@
+@import "../../../../styles/breakpoints";
+.wrapper {
+    border: 2px solid #F68112;
+    border-radius: 5px;
+    background-color: #fff4e6;
+    display: grid;
+    overflow: scroll;
+    &.wrapper2 {
+    grid-template-columns: 200px 200px 200px;
+    }
+    &.wrapper3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+&.wrapper4 {
+grid-template-columns: 2fr 1fr 1fr;
+}
+}
+.wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1em;
+    color: #F68112;
+}
+img {
+    max-width: 100%;
+}
