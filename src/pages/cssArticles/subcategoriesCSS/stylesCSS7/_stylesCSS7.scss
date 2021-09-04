@@ -1,8 +1,11 @@
-
-
-@import '../../../../styles/breakpoints';
+@import "../../../../styles/breakpoints";
 @include media("max", "xl") {
-    .relative {
-        display: none;
-    }
+  .relative {
+    display: none !important;
+  }
+}
+@include media("min", "xl") {
+  .for-phone {
+    display: none;
+  }
 }
