@@ -134,7 +134,7 @@ class CSS4 extends Component {
                     </p>
                     <p>Ниже посмотрим, что это за <strong>слои</strong> и за что они отвечают:
                     </p>      
-                    <div className="row d-flex flex-row mt-4">
+                    <div className="row d-flex flex-row justify-content-center mt-4">
                         <img className="w-75" src={boxModel} alt="" />
                     </div>
                     <ul className="list-group mt-4">
@@ -204,7 +204,7 @@ class CSS4 extends Component {
                     <p>Каждый элемент HTML принадлежит воображаемому <strong>слою</strong>.</p>
                     <p><strong>Порядок наложения</strong> зависит от того, как элементы вложены друг в друга: дочерние элементы появляются поверх своих родителей.</p>
                     <iframe width="100%" height="520" src="//jsfiddle.net/webref/qwhf4k41/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-                    <p>Как можно нарушить порядок вещей - так можно и нарушить нормальный поток документа.</p>
+                    <p className="mt-4">Как можно нарушить порядок вещей - так можно и нарушить нормальный поток документа.</p>
                     <h3 className="text-center mt-4">Способы</h3>
                     <ul className="list-group">
                       <li className="list-group-item" aria-current="true"><code>height, width</code> - Подходит, когда пользователь активирует (например, щёлкает мышью) элемент.</li>
