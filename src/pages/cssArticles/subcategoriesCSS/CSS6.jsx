@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 import banner from "./imagesCSS6/banner.jpg";
 import flexDirection from "./imagesCSS6/flex-direction.svg";
 import flexWrap from "./imagesCSS6/flex-wrap.svg";
@@ -17,11 +18,28 @@ class CSS6 extends Component {
   render() {
     return (
       <div>
+    
         <h1>Flex. Верстка layout по макету. Flex-froggy</h1>
+        <section className="mt-4">
+                <div className="container">
+                <nav aria-label="breadcrumb">
+                  <ol className="breadcrumb">
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS6#for_what">Что такое flexbox</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS6#props_for_parent">Fexbox свойства для родительского элемента</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS6#props_for_child">Fexbox свойства для дочерних элементов </Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS6#example"> Практический пример </Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS6#flex-froggy"> Flexbox игра </Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS6#resources">Дополнительные ресурсы </Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS6#hw">Домашнее задание </Link></li>
+                  </ol>
+                </nav>
+                </div>
+              </section> 
         <div className="banner-wrapper text-center mt-5">
           <img src={banner} alt="" />
         </div>
-        <section>
+    
+        <section  id="for_what">
           <div className="container">
             <h2 className="text-center mt-3">Зачем, а главное - для чего?</h2>
             <div>
@@ -37,7 +55,7 @@ class CSS6 extends Component {
             </div>
           </div>
         </section>
-        <section>
+        <section id="props_for_parent">
           <div className="container">
             <h2 className="text-center mt-3">
               Fexbox свойства для
@@ -246,7 +264,7 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
             </p>
           </div>
         </section>
-        <section>
+        <section id="props_for_child">
           <div className="container">
             <h2 className="text-center mt-3">
               Fexbox свойства для
@@ -387,7 +405,7 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
             </p>
           </div>
         </section>
-        <section>
+        <section id="example">
           <div className="container">
             <h2 className="text-center mt-5">Попробуйте сами:</h2>
             <small>
@@ -414,7 +432,7 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
             </iframe>
           </div>
         </section>
-        <section>
+        <section id="flex-froggy">
           <div className="container">
             <h2 className="text-center mt-5">
               Изучить flexbox свойства в игре
@@ -446,7 +464,7 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
             </p>
           </div>
         </section>
-        <section>
+        <section id="resources">
           <div className="container">
             <h2 className="text-center mt-5">Дополнительные ресурсы</h2>
             <div className="alert bg-dark" role="alert">
@@ -492,7 +510,7 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
             ></iframe>
           </div>
         </section>
-        <section>
+        <section  id="hw">
           <div className="container">
             <h2 className="mt-4 text-center">Домашнее задание</h2>
             <div class="bd-callout bd-callout-warning">

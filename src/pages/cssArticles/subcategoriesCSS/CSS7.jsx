@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 import adaptiveExample from "./imagesCSS7/adaptiv.gif";
 import responsiveExample from "./imagesCSS7/responsive.gif";
 import adaptiveRespoonsive from "./imagesCSS7/rwd-vs-adapt-example.gif";
@@ -18,7 +19,21 @@ class CSS7 extends Component {
           Adaptive, responsive верстка. Breakpoints. Бургер меню. Mobile first
           подход.
         </h1>
-        <section>
+        <section className="mt-4">
+                <div className="container">
+                <nav aria-label="breadcrumb">
+                  <ol className="breadcrumb">
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS7#for-what">Понятие адпативности </Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS7#adaptive-ex">Примеры адаптивного поведения </Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS7#responsive-ex">Пример отзывчивого (responsive) поведения </Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS7#how-to">Методы реализации </Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS7#resources">Дополнительные ресурсы </Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS7#hw">Домашнее задание </Link></li>
+                  </ol>
+                </nav>
+                </div>
+              </section> 
+        <section id="for-what">
           <div className="container">
             <h2 className="text-center mt-3">
               Что значит "верстать адаптивно"?
@@ -36,7 +51,7 @@ class CSS7 extends Component {
             </p>
           </div>
         </section>
-        <section>
+        <section  id="adaptive-ex">
           <div className="container">
             <hr />
             <h2 className="text-center mt-3">Пример адаптивного поведения</h2>
@@ -105,7 +120,7 @@ class CSS7 extends Component {
           </div>
         </section>
 
-        <section>
+        <section id="responsive-ex">
           <div className="container">
             <hr />
             <h2 className="text-center mt-3">
@@ -171,7 +186,7 @@ class CSS7 extends Component {
             </p>
           </div>
         </section>
-        <section>
+        <section id="how-to">
           <div className="container">
             <h2 className="text-center">
               Как сделать один сайт для всех устройств
@@ -346,7 +361,7 @@ float: right;
             </p>
           </div>
         </section>
-        <section>
+        <section id="resources">
           <div className="container">
             <h2 className="text-center mt-5">Дополнительные ресурсы</h2>
             <div className="alert bg-dark" role="alert">
@@ -380,7 +395,7 @@ float: right;
             </p>
           </div>
         </section>
-        <section>
+        <section id="hw">
           <div className="container">
             <h2 className="mt-4 text-center">Домашнее задание</h2>
             <div class="bd-callout bd-callout-warning">
