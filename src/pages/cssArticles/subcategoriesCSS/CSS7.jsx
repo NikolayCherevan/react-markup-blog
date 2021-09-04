@@ -390,7 +390,7 @@ float: right;
                     1.
                   </a>{" "}
                   сверстать сетки на различные устройства, используя{" "}
-                  <strong>медиа запросы</strong>
+                  <strong>медиа запросы (mobile first подход)</strong>
                   <p className="text-center">
                     <img src={hw} alt="" />
                   </p>
