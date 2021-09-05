@@ -269,7 +269,7 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
           <div className="container">
             <h2 className="text-center mt-3">
               Fexbox свойства для
-              <em>отдельных дочерних элементов</em>
+              <em> отдельных дочерних элементов</em>
             </h2>
             <p className="text-center mt-3 fw-bold text-decoration-underline">
               order

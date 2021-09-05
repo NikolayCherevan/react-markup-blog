@@ -7,10 +7,11 @@ import viewportBefore from "./imagesCSS7/img_viewport1.png";
 import viewportAfter from "./imagesCSS7/img_viewport2.png";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import { Rnd } from "react-rnd";
-import { SmileOutlined } from "@ant-design/icons";
+import { SmileOutlined,ArrowRightOutlined, ArrowDownOutlined } from "@ant-design/icons";
 import "./stylesCSS7/_stylesCSS7.scss";
 import { AlertOutlined } from "@ant-design/icons";
-import hw from "./imagesCSS7/hw.jpg";
+import hw1 from "./imagesCSS7/hw.jpg";
+import hw2 from "./imagesCSS7/hw2.jpg";
 class CSS7 extends Component {
   render() {
     return (
@@ -404,10 +405,13 @@ float: right;
                   <a class="btn btn-primary" role="button">
                     1.
                   </a>{" "}
-                  сверстать сетки на различные устройства, используя{" "}
+                  сверстать сетку, которая будет адаптивна к мобильному устройству, используя{" "}
                   <strong>медиа запросы (mobile first подход)</strong>
-                  <p className="text-center">
-                    <img src={hw} alt="" />
+                  <p className="text-center layout">
+                    <img className="fit-image" src={hw1} alt="" />
+                    <div className="for-phone"><ArrowDownOutlined /><ArrowDownOutlined /></div>
+                    <div className="relative"><ArrowRightOutlined /><ArrowRightOutlined /></div>
+                    <img className="fit-image large" src={hw2} alt="" />
                   </p>
                 </li>
               </ul>

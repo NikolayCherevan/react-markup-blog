@@ -8,7 +8,23 @@
   .for-phone {
     display: none;
   }
+  #hw {
+    p.text-center.layout {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .relative {
+        width: auto;
+      }
+    }
+  }
 }
 .max-500 {
-max-width: 200px;
+  max-width: 200px;
+}
+.fit-image {
+  max-width: 200px;
+  &.large {
+    max-width: 500px;
+  }
 }

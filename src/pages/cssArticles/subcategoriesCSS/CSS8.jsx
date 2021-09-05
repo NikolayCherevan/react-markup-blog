@@ -5,6 +5,7 @@ import gridInspector from "./imagesCSS8/grid-basic.jpg";
 import gridGarden from "./imagesCSS8/grid-garden.jpg";
 import gridAreas from "./imagesCSS8/areas-grid.jpg";
 import result from "./imagesCSS8/resultgrid.jpg";
+import gridHW from "./imagesCSS8/grid-hw.jpg";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import "./stylesCSS8/_stylesCSS8.scss";
 import { AlertOutlined,ArrowDownOutlined,ArrowUpOutlined} from "@ant-design/icons";
@@ -440,14 +441,8 @@ class CSS8 extends Component {
                   <a class="btn btn-primary" role="button">
                     1.
                   </a>{" "}
-                  Cверстать сайт по макету, используя <strong>гриды</strong>{" "}
-                  <a
-                    href="https://www.figma.com/file/pCnknSqrUpWEHUHxSHhUrl/MANUAL?node-id=2%3A660"
-                    className="border border-1 p-1"
-                  >
-                    {" "}
-                    Ccылка на макет{" "}
-                  </a>
+                  Верстка layout с использованием grid свойств:
+                  <img src={gridHW} alt="" />
                 </li>
                 <li class="list-group-item">
                   <a class="btn btn-primary" role="button">
