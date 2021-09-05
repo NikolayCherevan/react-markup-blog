@@ -1,0 +1,8 @@
+@import "../../../../styles/breakpoints";
+
+.fit-image {
+  max-width: 200px;
+  &.animation {
+    max-width: initial!important;
+  }
+}

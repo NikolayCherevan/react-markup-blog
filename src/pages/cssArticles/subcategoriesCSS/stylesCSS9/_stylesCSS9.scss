@@ -1,14 +1,24 @@
+@import "../../../../styles/breakpoints";
 .bd-callout {
-    padding: 1.25rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    border: 1px solid #e9ecef;
-    border-left-width: .25rem;
-    border-radius: .25rem;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e9ecef;
+  border-left-width: 0.25rem;
+  border-radius: 0.25rem;
 }
 .bd-callout-info {
-    border-left-color: #F68112;
-} 
+  border-left-color: #f68112;
+}
 .card {
-   width: 18rem;
+  width: 100%;
+  @include media("min", "xl") {
+    width: 18rem;
+  }
+}
+.fit-image {
+  max-width: 200px;
+  &.large {
+    max-width: 800px;
+  }
 }

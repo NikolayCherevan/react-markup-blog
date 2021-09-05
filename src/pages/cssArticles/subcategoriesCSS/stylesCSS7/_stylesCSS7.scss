@@ -4,6 +4,11 @@
     display: none !important;
   }
 }
+.relative {
+        .react-draggable {
+        height: auto!important;
+        }
+      }
 @include media("min", "xl") {
   .for-phone {
     display: none;
@@ -15,6 +20,9 @@
       justify-content: center;
       .relative {
         width: auto;
+        .react-draggable {
+        height: auto!important;
+        }
       }
     }
   }
