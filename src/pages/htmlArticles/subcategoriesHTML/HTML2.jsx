@@ -105,10 +105,10 @@ class HTML2 extends Component {
                         </div>  
                   </div>
                   <h3 className="mt-4 text-center">Базовые теги</h3>
-                  <iframe height="300" width="100%" scrolling="no" title="Basic HTML Tags" src="https://codepen.io/dylanfisher/embed/rjpPxb?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/dylanfisher/pen/rjpPxb">
-                    Basic HTML Tags</a> by Dylan Fisher (<a href="https://codepen.io/dylanfisher">@dylanfisher</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
+                  <iframe height="520" width="100%" scrolling="no" title="Basic tags example" src="https://codepen.io/creativeeconomy-school/embed/powEOqm?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                      See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/powEOqm">
+                      Basic tags example</a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
+                      on <a href="https://codepen.io">CodePen</a>.
                   </iframe>
                   <small>Нажми на <kbd>edit on CODEPEN</kbd> и попробуй прописать несколько своих тегов.</small>
                   <div className="alert alert-primary mt-4" role="alert">
@@ -124,10 +124,10 @@ class HTML2 extends Component {
                            Любая таблица состоит из строк и ячеек, которые задаются с помощью элементов <kbd>&lt;tr&gt;</kbd> и <kbd>&lt;td&gt;</kbd>.
                           Внутри <kbd>&lt;table&gt;</kbd> допустимо использовать следующие элементы: <kbd>&lt;caption&gt;</kbd>, <kbd>&lt;col&gt;</kbd>, <kbd>&lt;colgroup&gt;</kbd>, <kbd>&lt;tbody&gt;</kbd>, <kbd>&lt;td&gt;</kbd>, <kbd>&lt;tfoot&gt;</kbd>, <kbd>&lt;th&gt;</kbd>, <kbd>&lt;thead&gt;</kbd> и <kbd>&lt;tr&gt;</kbd>.
                         </p>
-                        <iframe height="300" width="100%" scrolling="no" title="Round corner table" src="https://codepen.io/seiko-yamaguchi/embed/powyrYy?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                            See the Pen <a href="https://codepen.io/seiko-yamaguchi/pen/powyrYy">
-                            Round corner table</a> by Seiko Yamaguchi (<a href="https://codepen.io/seiko-yamaguchi">@seiko-yamaguchi</a>)
-                            on <a href="https://codepen.io">CodePen</a>.
+                        <iframe height="520" width="100%" scrolling="no" title="Simple table example" src="https://codepen.io/creativeeconomy-school/embed/WNOGgPP?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                          See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/WNOGgPP">
+                          Simple table example</a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
+                          on <a href="https://codepen.io">CodePen</a>.
                         </iframe>
                         <h3 className="mt-4 text-center">Основные аттрибуты:</h3>
                         <ul className="list-group">
@@ -179,7 +179,7 @@ class HTML2 extends Component {
                     <SyntaxHighLighter language="html">
                       {`
                         <p> Теперь я умею создавать ссылки и вот пример:
-                        <a href="https://creativeeconomy.school/ua/">Главную страница Школы Креативной Экономики</a>.
+                        <a href="https://creativeeconomy.school/ua/">ссылка на главную страница Школы Креативной Экономики</a>.
                         </p>
                       `}
                             </SyntaxHighLighter>

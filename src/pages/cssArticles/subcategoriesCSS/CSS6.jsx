@@ -414,7 +414,7 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
               элементов при разных свойствах, используя радио кнопки
             </small>
             <iframe
-              height="300"
+              height="520"
               width="100%"
               scrolling="no"
               title="Flexbox playground"
@@ -520,17 +520,14 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
                   <a class="btn btn-primary" role="button">
                     1.
                   </a>{" "}
-                  Cверстать сетку, используя <strong>флексы</strong>
-                  <p className="text-center">
-                    <img src={hw} alt="" />
-                  </p>
+                  Cверстать <strong><a href="https://codepen.io/creativeeconomy-school/pen/vYZXVjV">сетку</a></strong>, используя <strong>флексы</strong>
                 </li>
                 <li class="list-group-item">
                   <a class="btn btn-primary" role="button">
                     2.
                   </a>{" "}
                   Пройти игру{" "}
-                  <a href="https://flexboxfroggy.com/#ru"> Flex froggy</a>
+                  <strong><a href="https://flexboxfroggy.com/#ru"> Flex froggy</a></strong>
                 </li>
               </ul>
             </div>
