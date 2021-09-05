@@ -353,11 +353,11 @@ float: right;
             </p>
             <p className="text-center">
               <p className="fw-bold">до meta тега:</p>
-              <img className="w-25" src={viewportBefore} alt="" />
+              <img className="max-500" src={viewportBefore} alt="" />
             </p>
             <p className="text-center mt-5">
               <p className="fw-bold">после meta тега:</p>
-              <img className="w-25" src={viewportAfter} alt="" />
+              <img className="max-500" src={viewportAfter} alt="" />
             </p>
           </div>
         </section>
