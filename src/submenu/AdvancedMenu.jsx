@@ -16,6 +16,7 @@ let arrOfAdvancedTheme = [
     {id:"15)", name: "Best practices в мире верстки. Правильное название классов, id. БЭМ. Семантика. Emmet плагин"},
     {id:"17)", name: "Node modules, npm, Webpack (Gulp, Grunt). SASS, LESS, SCSS."},
     {id:"19)", name: "Верстка “под ключ”. Pixel perfect extension, валидация верстки, кроссбраузерность, адаптивность."},
+    {id:"21)", name: "Совместная работа над проектом, git merge, pull request, git branches. Trello, toogle трекер. Роли в IT компании"},
 ]
 const menuAdvanced= () => {
     return (

@@ -22,6 +22,7 @@ import Advanced1 from '../pages/advancedArticles/subcategoriesAdvanced/Advanced1
 import Advanced2 from '../pages/advancedArticles/subcategoriesAdvanced/Advanced2';
 import Advanced3 from '../pages/advancedArticles/subcategoriesAdvanced/Advanced3';
 import Advanced4 from '../pages/advancedArticles/subcategoriesAdvanced/Advanced4';
+import Advanced5 from '../pages/advancedArticles/subcategoriesAdvanced/Advanced5';
 import JS1 from '../pages/jsArticles/subcategoriesJS/JS1';
 import JS2 from '../pages/jsArticles/subcategoriesJS/JS2';
 
@@ -82,6 +83,7 @@ export default function ContentMain() {
                 <Route path='/advancedMain/Advanced2' component={() => < Advanced2 />} />
                 <Route path='/advancedMain/Advanced3' component={() => < Advanced3 />} />
                 <Route path='/advancedMain/Advanced4' component={() => < Advanced4 />} />
+                <Route path='/advancedMain/Advanced5' component={() => < Advanced5 />} />
                 <Route path='/jsMain/JS1' component={() => < JS1 />} />
                 <Route path='/jsMain/JS2' component={() => < JS2 />} />
             </Switch>
