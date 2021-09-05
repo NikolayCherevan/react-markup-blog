@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-markup-blog/static/css/main.5b52dd86.chunk.css",
-    "main.js": "/react-markup-blog/static/js/main.88856fbf.chunk.js",
-    "main.js.map": "/react-markup-blog/static/js/main.88856fbf.chunk.js.map",
-    "runtime-main.js": "/react-markup-blog/static/js/runtime-main.e997be85.js",
-    "runtime-main.js.map": "/react-markup-blog/static/js/runtime-main.e997be85.js.map",
+    "main.css": "/react-markup-blog/static/css/main.7ecf6aa9.chunk.css",
+    "main.js": "/react-markup-blog/static/js/main.b23321f0.chunk.js",
+    "main.js.map": "/react-markup-blog/static/js/main.b23321f0.chunk.js.map",
+    "runtime-main.js": "/react-markup-blog/static/js/runtime-main.5532c687.js",
+    "runtime-main.js.map": "/react-markup-blog/static/js/runtime-main.5532c687.js.map",
     "static/css/2.81b0985c.chunk.css": "/react-markup-blog/static/css/2.81b0985c.chunk.css",
-    "static/js/2.cc9d8c9a.chunk.js": "/react-markup-blog/static/js/2.cc9d8c9a.chunk.js",
-    "static/js/2.cc9d8c9a.chunk.js.map": "/react-markup-blog/static/js/2.cc9d8c9a.chunk.js.map",
-    "static/js/3.97df7766.chunk.js": "/react-markup-blog/static/js/3.97df7766.chunk.js",
-    "static/js/3.97df7766.chunk.js.map": "/react-markup-blog/static/js/3.97df7766.chunk.js.map",
+    "static/js/2.70495f96.chunk.js": "/react-markup-blog/static/js/2.70495f96.chunk.js",
+    "static/js/2.70495f96.chunk.js.map": "/react-markup-blog/static/js/2.70495f96.chunk.js.map",
+    "static/js/3.874a515b.chunk.js": "/react-markup-blog/static/js/3.874a515b.chunk.js",
+    "static/js/3.874a515b.chunk.js.map": "/react-markup-blog/static/js/3.874a515b.chunk.js.map",
     "index.html": "/react-markup-blog/index.html",
     "static/css/2.81b0985c.chunk.css.map": "/react-markup-blog/static/css/2.81b0985c.chunk.css.map",
-    "static/css/main.5b52dd86.chunk.css.map": "/react-markup-blog/static/css/main.5b52dd86.chunk.css.map",
-    "static/js/2.cc9d8c9a.chunk.js.LICENSE.txt": "/react-markup-blog/static/js/2.cc9d8c9a.chunk.js.LICENSE.txt",
+    "static/css/main.7ecf6aa9.chunk.css.map": "/react-markup-blog/static/css/main.7ecf6aa9.chunk.css.map",
+    "static/js/2.70495f96.chunk.js.LICENSE.txt": "/react-markup-blog/static/js/2.70495f96.chunk.js.LICENSE.txt",
     "static/media/adaptiv.224de03c.gif": "/react-markup-blog/static/media/adaptiv.224de03c.gif",
     "static/media/align-content.d6acdecb.svg": "/react-markup-blog/static/media/align-content.d6acdecb.svg",
     "static/media/align-items.4670058b.svg": "/react-markup-blog/static/media/align-items.4670058b.svg",
@@ -26,6 +26,7 @@
     "static/media/flex-grow.42737906.svg": "/react-markup-blog/static/media/flex-grow.42737906.svg",
     "static/media/flex-wrap.69cd2ad8.svg": "/react-markup-blog/static/media/flex-wrap.69cd2ad8.svg",
     "static/media/fonts.6ce41000.png": "/react-markup-blog/static/media/fonts.6ce41000.png",
+    "static/media/form.d23357a8.jpg": "/react-markup-blog/static/media/form.d23357a8.jpg",
     "static/media/formats.1c031321.jpg": "/react-markup-blog/static/media/formats.1c031321.jpg",
     "static/media/froggy.59341303.png": "/react-markup-blog/static/media/froggy.59341303.png",
     "static/media/grid-basic.21394bc8.jpg": "/react-markup-blog/static/media/grid-basic.21394bc8.jpg",
@@ -47,10 +48,10 @@
     "static/media/without_source.ee732443.jpg": "/react-markup-blog/static/media/without_source.ee732443.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e997be85.js",
+    "static/js/runtime-main.5532c687.js",
     "static/css/2.81b0985c.chunk.css",
-    "static/js/2.cc9d8c9a.chunk.js",
-    "static/css/main.5b52dd86.chunk.css",
-    "static/js/main.88856fbf.chunk.js"
+    "static/js/2.70495f96.chunk.js",
+    "static/css/main.7ecf6aa9.chunk.css",
+    "static/js/main.b23321f0.chunk.js"
   ]
 }
