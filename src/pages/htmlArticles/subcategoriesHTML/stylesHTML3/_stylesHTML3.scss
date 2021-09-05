@@ -16,9 +16,9 @@
 .bd-callout-info {
     border-left-color: #5bc0de;
 }
-input {
+input,select {
     max-width: 100%;
 }
 .img-thumbnail {
-  max-width: 500px;
+  max-width: 300px!important;
 }

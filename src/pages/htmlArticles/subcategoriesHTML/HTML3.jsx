@@ -272,12 +272,12 @@ class HTML3 extends Component {
                   <input type="file" name="" id="file" />
                   <label className="fw-bold" htmlFor="file">
                     {" "}
-                    Загрузить мозг(сюда тоже можно нажать, это label, он
+                    Загрузить файл (сюда тоже можно нажать, это label, он
                     привязан к input по <code>id</code> )
                   </label>
                   <SyntaxHighLighter className="mt-5" language="html">
                     {`<input type="file" name="" id="file" />
-<label for="file"> Загрузить мозг</label>`}
+<label for="file"> Загрузить файл</label>`}
                   </SyntaxHighLighter>
                 </li>
                 <li class="list-group-item">
