@@ -17,7 +17,6 @@ class HTML1 extends Component {
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#steps">Этапы разрабокти</Link></li>
                     <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#front">Верстальщик vs Frontend-developer</Link></li>
-                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#pages">Рендеринг страниц</Link></li>
                     <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#development">Инструменты разработки</Link></li>
                     <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#cross">Кроссбраузерность, валидность верстки</Link></li>
                     <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#browsers">Браузеры</Link></li>
@@ -133,7 +132,7 @@ class HTML1 extends Component {
               </div>
                 </div>
               </section>
-              <section id="steps">
+              <section id="front">
                     <div className="container">
                     <h2 className="mt-4 text-center">Верстальщик vs Front-End Dev</h2>
                       <iframe id="ytplayer" className="w-100" type="text/html" width="640" height="720"

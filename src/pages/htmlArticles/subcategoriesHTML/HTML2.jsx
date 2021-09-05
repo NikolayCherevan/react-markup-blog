@@ -47,7 +47,7 @@ class HTML2 extends Component {
                     </div>
                   </div>
               </section>
-              <section>
+              <section id="tag">
                   <div className="container">
                       <h2 className="mt-4 text-center">HTML тег</h2>
                       <div className="row d-flex flex-row justify-content-center">
@@ -68,7 +68,7 @@ class HTML2 extends Component {
                         frameborder="0"/>
                   </div>
               </section>
-              <section>
+              <section id="blocks">
                   <div className="container">
                       <h2 className="mt-4 text-center">Блочные и строчные элементы</h2>
                       <div className="d-flex align-items-start w-100 mt-4">
@@ -104,7 +104,7 @@ class HTML2 extends Component {
                         </div>
                         </div>  
                   </div>
-                  <h3 className="mt-4 text-center">Базовые теги</h3>
+                  <h3 id="basic" className="mt-4 text-center">Базовые теги</h3>
                   <iframe height="520" width="100%" scrolling="no" title="Basic tags example" src="https://codepen.io/creativeeconomy-school/embed/powEOqm?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
                       See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/powEOqm">
                       Basic tags example</a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
@@ -116,7 +116,7 @@ class HTML2 extends Component {
                   </div>
                   </div>
               </section>
-              <section>
+              <section id="tables">
                   <div className="container">
                       <h2 className="mt-4 text-center">Таблицы</h2>
                         <p>
@@ -143,7 +143,7 @@ class HTML2 extends Component {
                   </div>
                   </div>
               </section>
-              <section>
+              <section id="lorem">
                   <div className="container">
                       <h2 className="mt-4 text-center">Lorem Ipsum</h2>
                       <p>
@@ -163,7 +163,7 @@ class HTML2 extends Component {
                     </div>
                   </div>
               </section>
-              <section>
+              <section id="links">
                   <div className="container">
                       <h2 className="mt-4 text-center">Ссылки</h2>
                       <p>
@@ -191,7 +191,7 @@ class HTML2 extends Component {
                   </div>
                   </div>
               </section>
-              <section>
+              <section id="images">
                   <div className="container">
                       <h2 className="mt-4 text-center">Изображения</h2>
                       <p>
@@ -230,7 +230,7 @@ class HTML2 extends Component {
                   </div>
                   </div>
               </section>
-              <section>
+              <section id="layout">
                     <div className="container">
                     <h2 className="mt-4 text-center">Базовая сетка HTML (HTML basic layouts)</h2>
                     <p></p>
@@ -259,12 +259,12 @@ class HTML2 extends Component {
                     </div>
               </section>
 
-              <section>
+              <section id="homework">
                     <div className="container">
                     <h2 className="mt-4 text-center">Домашнее задание</h2>
                     <div className="bd-callout bd-callout-warning">
                     <ul className="list-group list-group-flush">
-                      <li className="list-group-item"><a className="btn btn-primary" href="#" role="button">1.</a> Сверстай свою первую <strong>HTML</strong> страницу</li>
+                      <li className="list-group-item"><a className="btn btn-primary" href="#" role="button">1.</a> Сверстай свою первую HTML <strong><a href="https://www.youtube.com/watch?v=2ntJ1ETtHi8">страницу</a></strong></li>
                       <li className="list-group-item"><a className="btn btn-primary" href="#" role="button">2.</a> Верстай свою первую <strong>таблицу</strong> </li>
                       <li className="list-group-item"><a className="btn btn-primary" href="#" role="button">3.</a> Примени якорные ссылки в сверстанной статье </li>
                     </ul>
