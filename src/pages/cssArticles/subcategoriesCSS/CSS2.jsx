@@ -58,10 +58,10 @@ class CSS2 extends Component {
                         src="https://www.youtube.com/embed/cbbER36qRIE"
                         frameborder="0"/>
                     <h3 className="mt-4">Пример:</h3>
-                    <iframe height="300" width="100%" scrolling="no" title="Pseudo-Classes" src="https://codepen.io/CWiech05/embed/QNzKPj?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                        See the Pen <a href="https://codepen.io/CWiech05/pen/QNzKPj">
-                        Pseudo-Classes</a> by Christina W (<a href="https://codepen.io/CWiech05">@CWiech05</a>)
-                        on <a href="https://codepen.io">CodePen</a>.
+                    <iframe height="520" width="100%" scrolling="no" title="Lesson 5. Pseudoclasses" src="https://codepen.io/creativeeconomy-school/embed/xxrEybg?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                      See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/xxrEybg">
+                      Lesson 5. Pseudoclasses</a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
+                      on <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                     <div className="alert alert-primary mt-4" role="alert">
                     Полный список псевдоклассов: <a href="https://developer.mozilla.org/ru/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements" target="blank" className="alert-link">тут</a>.
@@ -105,10 +105,10 @@ class CSS2 extends Component {
                         src="https://www.youtube.com/embed/gM_9k1eWiXA"
                         frameborder="0"/>
                     <h3 className="mt-4">Пример:</h3>
-                    <iframe height="520" width="100%" scrolling="no" title="Pseudo-elements Example" src="https://codepen.io/CNDexter/embed/LBRWPZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                        See the Pen <a href="https://codepen.io/CNDexter/pen/LBRWPZ">
-                        Pseudo-elements Example</a> by CNDexter (<a href="https://codepen.io/CNDexter">@CNDexter</a>)
-                        on <a href="https://codepen.io">CodePen</a>.
+                    <iframe height="520" width="100%" scrolling="no" title="Lesson 5. Pseudoelements" src="https://codepen.io/creativeeconomy-school/embed/GREjYgG?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                      See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/GREjYgG">
+                      Lesson 5. Pseudoelements</a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
+                      on <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                     <div className="alert alert-primary mt-4" role="alert">
                     Полный список псевдоэлементов: <a href="https://developer.mozilla.org/ru/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements" target="blank" className="alert-link">тут</a>.
@@ -118,15 +118,15 @@ class CSS2 extends Component {
               <section id="examples">
                     <div className="container">
                     <h2 className="mt-4 text-center">Примеры использования</h2>
-                    <iframe height="520" width="100%" scrolling="no" title="simple navbars" src="https://codepen.io/igorpinhh/embed/eYWvLrB?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                        See the Pen <a href="https://codepen.io/igorpinhh/pen/eYWvLrB">
-                        simple navbars</a> by igorpinhh (<a href="https://codepen.io/igorpinhh">@igorpinhh</a>)
-                        on <a href="https://codepen.io">CodePen</a>.
+                    <iframe height="520" width="100%" scrolling="no" title="" src="https://codepen.io/creativeeconomy-school/embed/yLXaRNL?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                      See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/yLXaRNL">
+                      </a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
+                      on <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                     <small>Распространенный пример <kbd>:hover</kbd> + <kbd>::after, ::before</kbd> вместе при реализации хедера</small>
-                    <iframe className="mt-4" height="520" width="100%" scrolling="no" title="Verification Process" src="https://codepen.io/rtanak-dng/embed/RwVONdm?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                        See the Pen <a href="https://codepen.io/rtanak-dng/pen/RwVONdm">
-                        Verification Process</a> by Rattanak Dourng (<a href="https://codepen.io/rtanak-dng">@rtanak-dng</a>)
+                    <iframe height="520" width="100%" scrolling="no" title="" src="https://codepen.io/creativeeconomy-school/embed/dyRpgoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/dyRpgoZ">
+                        </a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
                         on <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                     <small>Пример совместного использования <code>псевдоклассов</code> и <code>псевдоэлементов</code> для реализации формы.</small>

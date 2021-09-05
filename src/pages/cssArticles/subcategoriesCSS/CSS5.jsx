@@ -102,11 +102,11 @@ class CSS5 extends Component {
                       </body>
                       `}
                     </SyntaxHighLighter>
-                      <iframe className="mt-4" height="520" width="100%" scrolling="no" title="CSS position example" src="https://codepen.io/chnbohwr/embed/woJMGy?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                            See the Pen <a href="https://codepen.io/chnbohwr/pen/woJMGy">
-                            CSS position example</a> by chnbohwr (<a href="https://codepen.io/chnbohwr">@chnbohwr</a>)
-                            on <a href="https://codepen.io">CodePen</a>.
-                        </iframe>
+                    <iframe height="520" width="100%" scrolling="no" title="Lesson 10. Position " src="https://codepen.io/creativeeconomy-school/embed/vYZXVZa?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                      See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/vYZXVZa">
+                      Lesson 10. Position </a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
+                      on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
                         <small>Наглядный пример того, как работает позиционирование</small>
                         <iframe id="ytplayer" className="w-100 mt-4" type="text/html" width="100%" height="520"
                         src="https://www.youtube.com/embed/mpykT40_VBc"
@@ -187,9 +187,9 @@ class CSS5 extends Component {
                     Полный список смотри тут: <a href="https://www.w3.org/TR/css-transitions-1/#animatable-properties" target="blank" className="alert-link">тут</a>.
                   </div> 
                     <h4 className="mt-2 text-center">Пример использования</h4>
-                    <iframe height="520" width="100%" scrolling="no" title="CSS Animation/Transition Demos" src="https://codepen.io/msbtterswrth/embed/LNgXqj?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                      See the Pen <a href="https://codepen.io/msbtterswrth/pen/LNgXqj">
-                      CSS Animation/Transition Demos</a> by Lynn Stahl (<a href="https://codepen.io/msbtterswrth">@msbtterswrth</a>)
+                    <iframe height="520" width="100%" scrolling="no" title="" src="https://codepen.io/creativeeconomy-school/embed/JjJRmyr?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                      See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/JjJRmyr">
+                      </a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
                       on <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                     <small>+ использование <code>animation</code> бонусом</small>
@@ -214,10 +214,10 @@ class CSS5 extends Component {
                     Полный список смотри тут: <a href="https://webref.ru/css/transform" target="blank" className="alert-link">тут</a>.
                   </div> 
                     <h4 className="mt-2 text-center">Пример использования</h4>
-                    <iframe height="520" width="100%" scrolling="no" title="Clock(12/24時制切換)" src="https://codepen.io/MyPo3/embed/MWoWQEg?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                      See the Pen <a href="https://codepen.io/MyPo3/pen/MWoWQEg">
-                      Clock(12/24時制切換)</a> by luke lee (<a href="https://codepen.io/MyPo3">@MyPo3</a>)
-                      on <a href="https://codepen.io">CodePen</a>.  
+                    <iframe height="520" width="100%" scrolling="no" title="" src="https://codepen.io/creativeeconomy-school/embed/QWgKZaw?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                      See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/QWgKZaw">
+                      </a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
+                      on <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                     </div>
               </section>

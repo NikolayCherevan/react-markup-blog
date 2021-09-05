@@ -144,9 +144,9 @@ class CSS4 extends Component {
                       <li className="list-group-item"><code>border</code> - граница.</li>
                       <li className="list-group-item"><code>margin</code> - внешний отступ.</li>
                       </ul>
-                      <iframe className="mt-4" height="520" width="100%" scrolling="no" title="CSS padding and margin practice" src="https://codepen.io/danielrlc/embed/LjEwq?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                        See the Pen <a href="https://codepen.io/danielrlc/pen/LjEwq">
-                        CSS padding and margin practice</a> by Daniel Clarke (<a href="https://codepen.io/danielrlc">@danielrlc</a>)
+                      <iframe height="520" width="100%" scrolling="no" title="Lesson 8. Padding &amp; margin practice" src="https://codepen.io/creativeeconomy-school/embed/oNwzaYp?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/oNwzaYp">
+                        Lesson 8. Padding &amp; margin practice</a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
                         on <a href="https://codepen.io">CodePen</a>.
                       </iframe>
                       <h3 className="text-center mt-4">Как использовать:</h3>
@@ -204,7 +204,11 @@ class CSS4 extends Component {
                     <p>У браузера есть <strong>три измерения</strong>.</p>
                     <p>Каждый элемент HTML принадлежит воображаемому <strong>слою</strong>.</p>
                     <p><strong>Порядок наложения</strong> зависит от того, как элементы вложены друг в друга: дочерние элементы появляются поверх своих родителей.</p>
-                    <iframe width="100%" height="520" src="//jsfiddle.net/webref/qwhf4k41/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    <iframe height="520" width="100%" scrolling="no" title="Lesson 8. Layouts" src="https://codepen.io/creativeeconomy-school/embed/ExXgdZW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                      See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/ExXgdZW">
+                      Lesson 8. Layouts</a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
+                      on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
                     <p className="mt-4">Как можно нарушить порядок вещей - так можно и нарушить нормальный поток документа.</p>
                     <h3 className="text-center mt-4">Способы</h3>
                     <ul className="list-group">
@@ -251,10 +255,10 @@ class CSS4 extends Component {
 
                       `}
                     </SyntaxHighLighter>
-                    <iframe height="520" width="100%" scrolling="no" title="Font Awesome Icon Font Example #2" src="https://codepen.io/SitePoint/embed/hFbBL?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                        See the Pen <a href="https://codepen.io/SitePoint/pen/hFbBL">
-                        Font Awesome Icon Font Example #2</a> by SitePoint (<a href="https://codepen.io/SitePoint">@SitePoint</a>)
-                        on <a href="https://codepen.io">CodePen</a>.
+                    <iframe height="520" width="100%" scrolling="no" title="Lesson 9. Google fonts" src="https://codepen.io/creativeeconomy-school/embed/ZEypqKO?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                      See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/ZEypqKO">
+                      Lesson 9. Google fonts</a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
+                      on <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                     <small>Пример использования <code>font-awesome</code></small>
                     </div>

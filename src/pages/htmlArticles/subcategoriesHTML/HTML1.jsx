@@ -15,20 +15,20 @@ class HTML1 extends Component {
                 <div className="container">
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><a href="#">Этапы разрабокти</a></li>
-                    <li className="breadcrumb-item"><a href="#">Верстальщик vs Frontend-developer</a></li>
-                    <li className="breadcrumb-item"><a href="#">Рендеринг страниц</a></li>
-                    <li className="breadcrumb-item"><a href="#">Инструменты разработки</a></li>
-                    <li className="breadcrumb-item"><a href="#">Кроссбраузерность, валидность верстки</a></li>
-                    <li className="breadcrumb-item"><a href="#">Браузеры</a></li>
-                    <li className="breadcrumb-item"><a href="#">Базовая HTML - структура</a></li>
-                    <li className="breadcrumb-item"><a href="#">Дерево документа</a></li>
-                    <li className="breadcrumb-item"><a href="#">Домашнее задание</a></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#steps">Этапы разрабокти</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#front">Верстальщик vs Frontend-developer</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#pages">Рендеринг страниц</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#development">Инструменты разработки</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#cross">Кроссбраузерность, валидность верстки</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#browsers">Браузеры</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#basic-html">Базовая HTML - структура</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#dom">Дерево документа</Link></li>
+                    <li className="breadcrumb-item"><Link to="/htmlMain/HTML1#homeworks">Домашнее задание</Link></li>
                   </ol>
                 </nav>
                 </div>
               </section>
-              <section>
+              <section id="steps">
                 <div className="container">
                 <h2 className="mt-4 text-center">Жизненный цикл разработки IT-продукта</h2>
                 <div className="accordion" id="accordionExample">
@@ -133,7 +133,7 @@ class HTML1 extends Component {
               </div>
                 </div>
               </section>
-              <section>
+              <section id="steps">
                     <div className="container">
                     <h2 className="mt-4 text-center">Верстальщик vs Front-End Dev</h2>
                       <iframe id="ytplayer" className="w-100" type="text/html" width="640" height="720"
@@ -141,7 +141,7 @@ class HTML1 extends Component {
                         frameborder="0"/>
                     </div>
               </section>
-              <section>
+              <section id="development">
                     <div className="container">
                     <h2 className="mt-4 text-center">Инструменты разработки</h2>
                     <ul className="list-group">
@@ -155,7 +155,7 @@ class HTML1 extends Component {
                     </ul>
                     </div>
               </section>
-              <section>
+              <section id="cross">
                     <div className="container">
                       <h2 className="mt-4 text-center">Хорошая верстка. Такое бывает?</h2>
                       <p className="mt-4">
@@ -251,7 +251,7 @@ class HTML1 extends Component {
                     </ul>
                     </div>
               </section>
-              <section>
+              <section id="basic-html">
                     <div className="container">
                     <h2 className="mt-4 text-center">HTML: Базовая структура</h2>
                     <p>
@@ -285,7 +285,7 @@ class HTML1 extends Component {
                             </div>
                     </div>
               </section>
-              <section>
+              <section id="dom">
                     <div className="container">
                     <h2 className="mt-4 text-center">DOM-дерево <code>( дерево документа )</code></h2>
                     <p>
@@ -311,7 +311,7 @@ class HTML1 extends Component {
                     </div>
               </section>
 
-              <section>
+              <section id="homework">
                     <div className="container">
                     <h2 className="mt-4 text-center">Домашнее задание</h2>
                     <div class="bd-callout bd-callout-warning">

@@ -199,10 +199,10 @@ class CSS1 extends Component {
                     Классы гибкие, их можно создавать много и называть понятными именами.
                      Например, можно создать класс, который отмечает раздел курса, который сейчас изучается.
                     </p>
-                    <iframe height="520" width="100%" scrolling="no" title="Basic CSS: Using a Class" src="https://codepen.io/mandybee/embed/eBJwYm?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                        See the Pen <a href="https://codepen.io/mandybee/pen/eBJwYm">
-                        Basic CSS: Using a Class</a> by Mandy Bee (<a href="https://codepen.io/mandybee">@mandybee</a>)
-                        on <a href="https://codepen.io">CodePen</a>.
+                    <iframe height="520" width="100%" scrolling="no" title="Basic CSS: Using a Class" src="https://codepen.io/creativeeconomy-school/embed/vYZXzMW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                      See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/vYZXzMW">
+                      Basic CSS: Using a Class</a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
+                      on <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                     <div className="alert alert-warning mt-2" role="alert">
                       <strong>Спойлер:</strong> существуют целые методологии по тому, как правильно формировать имена для элементов.
@@ -262,10 +262,10 @@ class CSS1 extends Component {
                         Такой вес нельзя измерить весами, так как он не вещественен в обычном понимании и вообще не существует в нашем с вами мире людей. 
                         Зато он есть в виде нулей и единиц. Получается, что селектор можно взвесить, используя некую систему, о которой мы и будем говорить дальше.</p>
                     <p>Вес селектора — это условные четыре позиции <kbd>x, x, x, x</kbd>, которые заполняются нулями и единицами в соответствии с содержимым селектора.</p>
-                    <iframe height="520" width="100%" scrolling="no" title="Specificity calculator" src="https://codepen.io/certainlyakey/embed/ycEAh?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                        See the Pen <a href="https://codepen.io/certainlyakey/pen/ycEAh">
-                        Specificity calculator</a> by certainlyakey (<a href="https://codepen.io/certainlyakey">@certainlyakey</a>)
-                        on <a href="https://codepen.io">CodePen</a>.
+                    <iframe height="520" width="100%" scrolling="no" title="Specificity Calculator" src="https://codepen.io/creativeeconomy-school/embed/bGRwxJQ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                      See the Pen <a href="https://codepen.io/creativeeconomy-school/pen/bGRwxJQ">
+                      Specificity Calculator</a> by Creative (<a href="https://codepen.io/creativeeconomy-school">@creativeeconomy-school</a>)
+                      on <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                     <div className="alert alert-primary mt-4" role="alert">
                     Подробнее о высчитывании веса: <a href="https://canonium.com/articles/css-understanding-weight-selectors/" target="blank" className="alert-link">тут</a>.
