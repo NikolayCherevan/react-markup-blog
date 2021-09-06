@@ -72,7 +72,7 @@ class Advanced3 extends Component {
             <div className="alert alert-primary mt-4" role="alert">
               Чуть <Link to="/advancedMain/Advanced3#resources">ниже</Link> вы найдете поробную инструкцию о настройке <a href="https://webpack.js.org/"> Webpack </a> с нуля </div>
             <p className="bd-callout bd-callout-info">
-              <b>Все что вам нужно знать о webpack</b>  - нужно настроить <a href="https://www.npmjs.com/package/autoprefixer"> автопрефиксеры </a> к свойствам стилей - webpack, нужно <a href="https://www.npmjs.com/package/image-minimizer-webpack-plugin"> минимизировать картинки </a> во всем проекте -  вебпак. Нужно компилировать стили через препроцессор, допустим <a href="https://sass-scss.ru/guide/">SASS</a> - нужен webpack. <b>Webpack</b> - нунчаки в руках фронтенд разработчика в сравнении с выломанной палкой в виде папки с типичной html,css,js структурой проекта сайта.  
+              <b>Все что вам нужно знать о webpack:</b> нужно настроить <a href="https://www.npmjs.com/package/autoprefixer"> автопрефиксеры </a> к свойствам стилей - webpack, нужно <a href="https://www.npmjs.com/package/image-minimizer-webpack-plugin"> минимизировать картинки </a> во всем проекте -  вебпак. Нужно компилировать стили через препроцессор, допустим <a href="https://sass-scss.ru/guide/">SASS</a> - нужен webpack. <b>Webpack</b> - нунчаки в руках фронтенд разработчика в сравнении с сломанной палкой в виде папки с типичной html,css,js структурой проекта сайта.  
             </p>
           </div>
         </section>

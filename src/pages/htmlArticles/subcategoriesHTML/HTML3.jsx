@@ -423,18 +423,19 @@ class HTML3 extends Component {
             <h2 className="mt-4 text-center">Домашнее задание</h2>
             <div class="bd-callout bd-callout-warning">
               <ul class="list-group list-group-flush">
+
                 <li class="list-group-item">
-                  <a class="btn btn-primary" role="button">
+                  <p><a class="btn btn-primary" role="button">
                     1.
                   </a>
-                  <p>Стилизовать форму по примеру:</p>
+                  <span> Стилизовать форму по примеру:     </span></p>
                   <Zoom><img className="image-base" src={styledHW} alt="" /></Zoom>
                 </li>
+                
                 <li class="list-group-item">
-                  <a class="btn btn-primary" role="button">
+                  <p><a class="btn btn-primary" role="button">
                     2.
-                  </a>
-                  <p>Стилизовать элементы формы по примеру:</p>
+                  </a><span> Стилизовать элементы формы по примеру:   </span></p>
                   <Zoom><img style={{maxWidth: "100px"}} src={HW2} alt="" /></Zoom>
                 </li>
               </ul>
