@@ -5,6 +5,7 @@ import styledHW from "./imagesHTML3/formstyled.jpg";
 import HW2 from "./imagesHTML3/hw2.jpg";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import "./stylesHTML3/_stylesHTML3.scss";
+import Zoom from 'react-medium-image-zoom'
 import {
   AlertOutlined,
   ArrowDownOutlined,
@@ -427,14 +428,14 @@ class HTML3 extends Component {
                     1.
                   </a>
                   <p>Стилизовать форму по примеру:</p>
-                  <img className="img-thumbnail" src={styledHW} alt="" />
+                  <Zoom><img className="image-base" src={styledHW} alt="" /></Zoom>
                 </li>
                 <li class="list-group-item">
                   <a class="btn btn-primary" role="button">
                     2.
                   </a>
                   <p>Стилизовать элементы формы по примеру:</p>
-                  <img className="img-thumbnail" src={HW2} alt="" />
+                  <Zoom><img style={{maxWidth: "100px"}} src={HW2} alt="" /></Zoom>
                 </li>
               </ul>
             </div>

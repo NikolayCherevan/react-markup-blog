@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './pages/Home.jsx';
 import bootstrap from 'bootstrap';
-
+import 'react-medium-image-zoom/dist/styles.css'
 import {
     HashRouter
 } from "react-router-dom";

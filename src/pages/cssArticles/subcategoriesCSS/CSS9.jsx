@@ -7,15 +7,18 @@ import hw2 from "./imagesCSS9/hw1.jpg";
 import uikit from "./imagesCSS9/ukit.webp";
 import tailWind from "./imagesCSS9/tailwindCss.webp";
 import banner from "./imagesCSS9/frameworks.png";
-
+import Zoom from 'react-medium-image-zoom'
+import 'uikit/dist/js/uikit'
 import { ArrowRightOutlined, ArrowDownOutlined } from "@ant-design/icons";
-import "uikit/dist/css/uikit.min.css";
-import "uikit/dist/js/uikit.min.js";
+
 let bgUikit = "https://getuikit.com/docs/images/dark.jpg";
 class CSS9 extends Component {
+  
   render() {
+    
     return (
-      <div>
+      
+      <div className="local-uikit">
         <h1>CSS frameworks. Bootstrap(Uikit, Materialize)</h1>
         <section className="mt-4">
           <div className="container">
@@ -555,7 +558,7 @@ class CSS9 extends Component {
                   </a>{" "}
                   Cверстать секции по примеру, используя <strong>bootstrap</strong>{" "}
                   <p className="text-center layout">
-                    <img className="fit-image" src={hw1} alt="" />
+                    <Zoom><img className="fit-image" src={hw1} alt="" /></Zoom>
                     <div className="for-phone">
                       <ArrowDownOutlined />
                       <ArrowDownOutlined />
@@ -564,7 +567,7 @@ class CSS9 extends Component {
                       <ArrowRightOutlined />
                       <ArrowRightOutlined />
                     </div>
-                    <img className="fit-image large" src={hw2} alt="" />
+                    <Zoom><img className="fit-image large" src={hw2} alt="" /></Zoom>
                   </p>
                 </li>
               </ul>

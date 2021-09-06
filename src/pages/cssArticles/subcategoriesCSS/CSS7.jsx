@@ -12,6 +12,7 @@ import "./stylesCSS7/_stylesCSS7.scss";
 import { AlertOutlined } from "@ant-design/icons";
 import hw1 from "./imagesCSS7/hw.jpg";
 import hw2 from "./imagesCSS7/hw2.jpg";
+import Zoom from 'react-medium-image-zoom'
 class CSS7 extends Component {
   render() {
     return (
@@ -24,7 +25,7 @@ class CSS7 extends Component {
                 <div className="container">
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><Link to="/cssMain/CSS7#for-what">Понятие адпативности </Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS7#for-what">Понятие адаптивности </Link></li>
                     <li className="breadcrumb-item"><Link to="/cssMain/CSS7#adaptive-ex">Примеры адаптивного поведения </Link></li>
                     <li className="breadcrumb-item"><Link to="/cssMain/CSS7#responsive-ex">Пример отзывчивого (responsive) поведения </Link></li>
                     <li className="breadcrumb-item"><Link to="/cssMain/CSS7#how-to">Методы реализации </Link></li>
@@ -408,10 +409,10 @@ float: right;
                   сверстать сетку, которая будет адаптивна к мобильному устройству, используя{" "}
                   <strong>медиа запросы (mobile first подход)</strong>
                   <p className="text-center layout">
-                    <img className="fit-image" src={hw1} alt="" />
+                    <Zoom><img className="fit-image" src={hw1} alt="" /></Zoom>
                     <div className="for-phone"><ArrowDownOutlined /><ArrowDownOutlined /></div>
                     <div className="relative"><ArrowRightOutlined /><ArrowRightOutlined /></div>
-                    <img className="fit-image large" src={hw2} alt="" />
+                    <Zoom><img className="fit-image large" src={hw2} alt="" /></Zoom>
                   </p>
                 </li>
               </ul>

@@ -1,37 +1,46 @@
 @import "../../../../styles/breakpoints";
+
 @include media("max", "xl") {
   .relative {
     display: none !important;
   }
 }
+
 .relative {
-        .react-draggable {
-        height: auto!important;
-        }
-      }
+  .react-draggable {
+    height: auto !important;
+  }
+}
+
 @include media("min", "xl") {
   .for-phone {
     display: none;
   }
+
   #hw {
     p.text-center.layout {
       display: flex;
       align-items: center;
       justify-content: center;
+
       .relative {
         width: auto;
+
         .react-draggable {
-        height: auto!important;
+          height: auto !important;
         }
       }
     }
   }
 }
+
 .max-500 {
   max-width: 200px;
 }
+
 .fit-image {
   max-width: 200px;
+
   &.large {
     max-width: 500px;
   }

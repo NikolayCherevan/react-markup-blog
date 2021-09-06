@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import hw1 from "./imagesAdvanced3/mobilehw.jpg";
 import { ArrowRightOutlined, ArrowDownOutlined } from "@ant-design/icons";
 import hw2 from "./imagesAdvanced3/pchw.jpg";
+import Zoom from 'react-medium-image-zoom';
 class Advanced3 extends Component {
   render() {
     return (
@@ -26,7 +27,7 @@ class Advanced3 extends Component {
                   <strong>webpack</strong> сборщик, переменные и миксины{" "}
                   <strong>SCCS</strong>{" "}
                   <p className="text-center layout">
-                    <img className="fit-image" src={hw1} alt="" />
+                   <Zoom> <img className="fit-image" src={hw1} alt="" /></Zoom>
                     <div className="for-phone">
                       <ArrowDownOutlined />
                       <ArrowDownOutlined />
@@ -35,7 +36,7 @@ class Advanced3 extends Component {
                       <ArrowRightOutlined />
                       <ArrowRightOutlined />
                     </div>
-                    <img className="fit-image large" src={hw2} alt="" />
+                    <Zoom> <img className="fit-image base" src={hw2} alt="" /></Zoom>
                   </p>
                 </li>
               </ul>

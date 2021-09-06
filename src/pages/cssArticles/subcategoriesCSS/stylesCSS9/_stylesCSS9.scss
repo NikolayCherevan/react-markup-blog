@@ -22,3 +22,15 @@
     max-width: 800px;
   }
 }
+.local-uikit {
+  @import "uikit/src/scss/variables-theme.scss";
+  @import "uikit/src/scss/uikit.scss";
+  @import "uikit/src/scss/variables.scss";
+  @import "uikit/src/scss/components/_import.components.scss";
+  
+}
+.uk-height-large.uk-background-cover {
+  h1, p {
+    color: white;
+  }
+}
