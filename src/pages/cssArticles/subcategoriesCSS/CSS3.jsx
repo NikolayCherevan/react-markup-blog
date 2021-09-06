@@ -14,8 +14,7 @@ class CSS3 extends Component {
                     <li className="breadcrumb-item"><Link to="/cssMain/CSS3#format">Форматирование текста</Link></li>
                     <li className="breadcrumb-item"><Link to="/cssMain/CSS3#background">Background</Link></li>
                     <li className="breadcrumb-item"><Link to="/cssMain/CSS3#colors">Цвета</Link></li>
-                    <li className="breadcrumb-item"><Link to="/cssMain/CSS1#classes">Class & id</Link></li>
-                    <li className="breadcrumb-item"><Link to="/cssMain/CSS1#selectors">CSS-селекторы</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cssMain/CSS3#photoshop">Photoshop</Link></li>
                     <li className="breadcrumb-item"><Link to="/cssMain/CSS3#homework">Домашнее задание</Link></li>
                   </ol>
                 </nav>
@@ -123,7 +122,7 @@ class CSS3 extends Component {
                   </div>
                   
               </section>
-              <section id="colors">
+              <section id="photoshop">
                   <div className="container">
                       <h2 className="mt-4 text-center">Photoshop</h2>
                       <p>
