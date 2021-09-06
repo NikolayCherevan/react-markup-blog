@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import { HashLink as Link } from 'react-router-hash-link';
+import Zoom from 'react-medium-image-zoom';
 import hw1 from "./imagesAdvanced2/hw1.jpg";
 import hw2 from "./imagesAdvanced2/hw2.jpg";
 import hw3 from "./imagesAdvanced2/hw3.jpg";
@@ -9,7 +10,6 @@ import banner from "./imagesAdvanced2/nesting-elements-within-block.png";
 import itCSS from "./imagesAdvanced2/itCSS.png";
 import codeCoverage from "./imagesAdvanced2/diecode.png";
 import coverage from "./imagesAdvanced2/coverage.jpg";
-import Zoom from 'react-medium-image-zoom'
 
 class Advanced2 extends Component {
   render() {
