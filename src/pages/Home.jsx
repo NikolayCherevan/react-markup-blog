@@ -1,10 +1,22 @@
-import React from 'react';
-import 'antd/dist/antd.css';
-import { Layout} from 'antd';
+import React, { Suspense } from 'react';
 import FooterMain from '../partials/Footer';
 import HeaderMain from '../partials/Header';
 import SidebarMain from '../partials/Sidebar';
-import ContentMain from '../partials/Content';
+import { css } from "@emotion/react";
+import ClipLoader from "react-spinners/PacmanLoader";
+import { Layout} from 'antd';
+import 'antd/dist/antd.css';
+const ContentMain = React.lazy(() => import('../partials/Content'));
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: #F68112;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+`;
+
 export default function SiderDemo() {
 
     return (
@@ -14,7 +26,9 @@ export default function SiderDemo() {
             <SidebarMain/>
             <Layout className="site-layout">
                 <HeaderMain />
-              <ContentMain/>
+               <Suspense fallback={<ClipLoader color={"#F68112"} css={override} size={25} />}>
+                        <ContentMain/>
+                    </Suspense>
                 <FooterMain />
             </Layout>
         </Layout>
