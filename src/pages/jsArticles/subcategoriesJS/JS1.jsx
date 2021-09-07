@@ -6,6 +6,7 @@ import Zoom from "react-medium-image-zoom";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import js1_1 from "./imagesJS1/javascript1_1.png";
 import js8_1 from "./imagesJS1/javascript8_1.png";
+import './stylesJS1/_stylesJS1.scss';
 class JS1 extends Component {
   componentDidMount() {
     let target = null;
