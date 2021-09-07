@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/pages/jsArticles/subcategoriesJS/stylesJS1/_stylesJS1.scss"],"names":[],"mappings":"AAEA,kBACA,eAAgB","file":"13.c8dc4e38.chunk.css","sourcesContent":["@import \"../../../../styles/breakpoints\";\r\n\r\n.fit-image.gif-js {\r\nmax-width: 500px;\r\n}"]}
