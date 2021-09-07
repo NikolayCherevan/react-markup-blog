@@ -47,7 +47,7 @@ class JS1 extends Component {
                 <li className="breadcrumb-item"><Link to="/jsMain/JS1#cond_statements">Условные операторы </Link></li>
                 <li className="breadcrumb-item"><Link to="/jsMain/JS1#js_DOM">JS DOM</Link></li>
                 <li className="breadcrumb-item">
-                  <Link to="HTML3#resources">Дополнительные ресурсы </Link>
+                  <Link to="/jsMain/JS1#resources">Дополнительные ресурсы </Link>
                 </li>
                 <li className="breadcrumb-item"><Link to="/jsMain/JS1#homework">Домашнее задание</Link></li>
               </ol>
@@ -215,16 +215,36 @@ function checkTarget() {
               </p>
               <p> <small> Модель DOM создается в виде дерева таких объектов:</small></p>
               <p className="text-center"> <Zoom><img style={{ maxWidth: "400px" }} src={js8_1} alt="" /></Zoom> </p>
-              <p>
-                Благодаря DOM мы можем изменять, перемещать, удалять, заменять элементы на странице, получать их координаты, атрибуты. Создавать теги и много другое. 
-                <div className="alert alert-primary mt-4" role="alert">
-                Все возможности <a href=" https://learn.javascript.ru/"> здесь, во второй части учебника, </a> в разделе "Браузер: документ, события, интерфейсы" 
-              </div>
-               
-              </p>
+                Благодаря DOM мы можем изменять, перемещать, удалять, заменять элементы на странице, получать их координаты, атрибуты...  
+              <p>А для наглядности:</p>
+               <p className="bd-callout bd-callout-info"> Давайте создадим <code>colorpicker</code> и при выборе цвета, в реальном времени будем менять цвет <b className="some-text">ВОТ ЭТОГО ТЕКСТА</b> </p>
+              <input type="color" name="" id="" onChange={function(event){document.querySelector('.some-text').style.color = event.target.value}}/> - вот colorpicker, пробуйте
+              <p className="bd-callout bd-callout-info"> Если вам понравилось, то просто не останавливайтесь на достигнутом! Впереди много крутецкого!!</p>
+              <small> А вот и код для любопытных. Попробуйте разобраться: </small>
+            <SyntaxHighLighter language="html">
+                {`
+<!--html-->
+<input type="color">
+<b className="some-text">ВОТ ЭТОГО ТЕКСТА</b>
+             `}
+              </SyntaxHighLighter>
+       <SyntaxHighLighter language="javascript">
+                {`
+//JS
+document.querySelector('[type="color"]').addEventListener('input', function(event) {
+  document.querySelector('.some-text').style.color = event.target.value
+})
+
+             `}
+              </SyntaxHighLighter>
               <div className="alert alert-primary mt-4" role="alert">
                 Более подробно об элементах DOM дерева <a href="https://learn.javascript.ru/dom-nodes"> здесь</a> 
               </div>
+                <div className="alert alert-primary mt-4" role="alert">
+                Все возможности DOM <a href=" https://learn.javascript.ru/"> здесь, во второй части учебника, </a> в разделе <em>"Браузер: документ, события, интерфейсы"</em>
+              </div>
+             
+            
             </div>
           </section>
           <section id="resources">
@@ -277,7 +297,7 @@ function checkTarget() {
                   </a>{" "}
                   Реализовать <em>выпадающее меню</em>
                   <p className="text-center layout">
-                    <img className="fit-image gif-js" src={hw1} alt="" />
+                    <Zoom><img className="fit-image gif-js" src={hw1} alt="" /></Zoom>
                   </p>
                 </li>
               </ul>
