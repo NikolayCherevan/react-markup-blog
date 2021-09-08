@@ -3,15 +3,11 @@ import { css } from "@emotion/react";
 import ClipLoader from "react-spinners/PacmanLoader";
 import { Layout } from 'antd';
 import HomePage from "../pages/HomePage";
-import IntroductionCSS from "../pages/cssArticles/IntroductionCSS";
-import IntroductionHTML from "../pages/htmlArticles/IntroductionHTML";
-import IntroductionAdvanced from '../pages/advancedArticles/IntroductionAdvanced';
-import IntroductionJS from '../pages/jsArticles/IntroductionJS';
 import NotFoundPage from "../pages/NotFoundPage";
 import {
     Switch,
     Route,
-    useLocation,
+    useLocation, Redirect
 } from "react-router-dom";
 const HTML1 = React.lazy(() => import('../pages/htmlArticles/subcategoriesHTML/HTML1'));
 const HTML2 = React.lazy(() => import('../pages/htmlArticles/subcategoriesHTML/HTML2'));
@@ -53,29 +49,33 @@ export default function ContentMain() {
         <Content style={{
             margin: '0 16px'
         }}>
+            <Suspense className='loader' fallback={  <ClipLoader color={"#F68112"} css={override} size={25} />}>
             <Switch>
                 <Route exact path='/' component={() => < HomePage />} />
 
                 <Route
                     path='/cssMain'
                     component={() => HeaderView() === '/cssMain'
-                        ? < IntroductionCSS /> : ''} />
+                        ?  <Redirect to="/cssMain/CSS1" /> : ''} />
                 <Route
                     path='/htmlMain'
                     component={() => HeaderView() === '/htmlMain'
-                        ? < IntroductionHTML /> : ''} />
+                        ? <Redirect to="/htmlMain/HTML1" /> : ''} />
                 <Route
                     path='/advancedMain'
                     component={() => HeaderView() === '/advancedMain'
-                        ? < IntroductionAdvanced /> : ''} />
+                        ? <Redirect to="/advancedMain/Advanced1" /> : ''} />
                 <Route
                     path='/jsMain'
                     component={() => HeaderView() === '/jsMain'
-                        ? <IntroductionJS /> : ''} />
-                <Route component={() => < NotFoundPage />} />
+                        ? <Redirect to="/jsMain/JS1" /> : ''} />
+               <Route path="" component={() => HeaderView() !== '/'
+                        ? <NotFoundPage /> : ''} />
+
             </Switch>
+       
             <Switch>
-                <Suspense className='loader' fallback={  <ClipLoader color={"#F68112"} css={override} size={25} />}>
+               
                 <Route path='/htmlMain/HTML1' component={() =>  < HTML1 />} />
                 <Route path='/htmlMain/HTML2' component={() => < HTML2 />} />
                 <Route path='/htmlMain/HTML3' component={() => < HTML3 />} />
@@ -95,8 +95,12 @@ export default function ContentMain() {
                 <Route path='/advancedMain/Advanced4' component={() => < Advanced4 />} />
                 <Route path='/advancedMain/Advanced5' component={() => < Advanced5 />} />
                 <Route path='/jsMain/JS1' component={() => < JS1 />} />
-                <Route path='/jsMain/JS2' component={() => < JS2 />} /></Suspense>
+                <Route path='/jsMain/JS2' component={() => < JS2 />} />
+                <Route path="" component={() => HeaderView() !== '/'
+                        ? <NotFoundPage/> : ''} />
+                
             </Switch>
+            </Suspense>
         </Content>
     )
 }
