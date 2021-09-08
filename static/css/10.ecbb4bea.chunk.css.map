@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/pages/cssArticles/subcategoriesCSS/stylesCSS10/_stylesCSS10.scss"],"names":[],"mappings":"AAEA,WACE,eAAgB,CADlB,qBAGI,wBAA4B","file":"10.ecbb4bea.chunk.css","sourcesContent":["@import \"../../../../styles/breakpoints\";\r\n\r\n.fit-image {\r\n  max-width: 200px;\r\n  &.animation {\r\n    max-width: initial!important;\r\n  }\r\n}\r\n"]}
