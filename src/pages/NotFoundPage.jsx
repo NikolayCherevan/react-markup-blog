@@ -1,24 +1,28 @@
 import { Alert } from 'antd';
-import './styles/_404.scss'
+import './styles/_404.scss';
+import {
+    Link,
+    useLocation,
+} from "react-router-dom";
 export default function NotFoundPage() {
     return (
-        <section class="page_404">
-	<div class="container">
-		<div class="row">	
-		<div class="col-sm-12 ">
-		<div class="col-sm-12 col-sm-offset-1  text-center">
-		<div class="four_zero_four_bg">
-			<h1 class="text-center ">404</h1>
+        <section className="page_404">
+	<div className="container">
+		<div className="row">	
+		<div className="col-sm-12 ">
+		<div className="col-sm-12 col-sm-offset-1  text-center">
+		<div className="four_zero_four_bg">
+			<h1 className="text-center ">404</h1>
 		</div>
 		
-		<div class="contant_box_404">
-		<h3 class="h2">
+		<div className="contant_box_404">
+		<h3 className="h2">
 		    Похоже, вы заблудились
 		</h3>
 		
 		<p>Страница, которую вы ищете, недоступна!</p>
 		
-		<a href="/" class="link_404">Go Home</a>
+		 <Link className="link_404" to={`/`}>Go Home</Link>
 	</div>
 		</div>
 		</div>

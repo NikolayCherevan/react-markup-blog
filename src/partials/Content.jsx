@@ -69,7 +69,7 @@ export default function ContentMain() {
                     path='/jsMain'
                     component={() => HeaderView() === '/jsMain'
                         ? <Redirect to="/jsMain/JS1" /> : ''} />
-               <Route path="" component={() => HeaderView() !== '/'
+                <Route path="" component={() => HeaderView() !== '/'
                         ? <NotFoundPage /> : ''} />
 
             </Switch>
